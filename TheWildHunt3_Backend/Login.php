@@ -1,3 +1,3 @@
 <?php 
- echo "Belum bang";
+ echo "Belum bang hehe";
 ?>

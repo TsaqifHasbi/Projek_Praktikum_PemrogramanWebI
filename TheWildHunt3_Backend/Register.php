@@ -1,3 +1,3 @@
 <?php 
-echo "Belom juga bang";
+echo "Belom juga bang hehe";
 ?>
