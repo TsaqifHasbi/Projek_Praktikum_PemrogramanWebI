@@ -1,5 +1,83 @@
-body {
-    background-image: url("Gambar/bg-login.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+@font-face {
+  font-family: 'TheWitcher';
+  src: url('../assets/Fonts/Thewitcher-jnOj.ttf') format('truetype');
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+}
+
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  /* border: 1px solid white; */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  margin-left: 120px; 
+  align-self: flex-start;
+}
+.logo{
+  width: 654px;
+  height: 245px;
+}
+
+.subtitle {
+  font-family: 'TheWitcher', Arial, sans-serif;
+  font-size: 2.5rem;
+  margin: 10px 0 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #444;
+}
