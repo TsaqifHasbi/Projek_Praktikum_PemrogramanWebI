@@ -28,7 +28,7 @@
 
             <button type="submit" class="btn">Sign Up</button>
         </form>
-        <p class="footer-text">ARE YOU A WITCHER?</p>
+        <a href="Sign-in.php" class="td"><p class="footer-text">ARE YOU A WITCHER?</p></a>
         </div>
     </div>
 

@@ -1,35 +1,32 @@
-/* Reset CSS */
 body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
-  }
+}
   
-  /* Background */
-  .background {
+.background {
     position: fixed;
     width: 100%;
     height: 100%;
     overflow: hidden;
     z-index: -1;
-  }
+}
   
-  .bg-image {
+.bg-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+}
   
-  /* Form Container */
-  .form-container {
+.form-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-  }
+}
   
-  .form-content {
+.form-content {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     padding: 30px 40px;
@@ -39,36 +36,35 @@ body, html {
     width: 90%;
     max-width: 400px;
     border: 1px solid rgba(255, 255, 255, 0.5);
-  }
+}
   
-  /* Logo */
-  .logo {
+
+.logo {
     width: 70%;
     color: white;
     margin-bottom: 8px;
     text-transform: uppercase;
-  }
+}
   
-  .logo span {
+.logo span {
     color: red;
     font-size: 1.2rem;
-  }
+}
   
-  /* Form Inputs */
-  form {
+form {
     display: flex;
     flex-direction: column;
-  }
+}
   
-  form label {
+form label {
     text-align: left;
     font-size: 0.9rem;
     margin: 5px 0;
     color: white;
     font-family: 'Caudex', Arial, sans-serif;
-  }
+}
   
-  form input {
+form input {
     padding: 10px;
     margin-bottom: 15px;
     border: none;
@@ -79,18 +75,17 @@ body, html {
     outline: none;
     font-family: 'Caudex', Arial, sans-serif;
     transition: background 0.3s ease;
-  }
+}
   
-  form input::placeholder {
+form input::placeholder {
     color: rgba(255, 255, 255, 0.7);
-  }
+}
   
-  form input:focus {
+form input:focus {
     background: rgba(255, 255, 255, 0.3);
-  }
-  
-  /* Button */
-  .btn {
+}
+
+.btn {
     background: #8B160D;
     color: white;
     padding: 10px 20px;
@@ -100,23 +95,26 @@ body, html {
     cursor: pointer;
     transition: background 0.3s ease;
     font-family: 'Caudex', Arial, sans-serif;
-  }
+}
   
-  .btn:hover {
+.btn:hover {
     background: darkred;
-  }
+}
   
-  /* Footer Text */
-  .footer-text {
+.footer-text {
     margin-top: 10px;
     font-size: 0.9rem;
     color: white;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-family: 'Caudex', Arial, sans-serif;
-  }
+}
 
-  /* Popup Styling */
+.td {
+    text-decoration: none;
+    color: white;
+}
+
 .popup {
     position: fixed;
     top: 0;
@@ -131,9 +129,9 @@ body, html {
     transition: opacity 0.3s ease;
     opacity: 0;
     pointer-events: none;
-  }
+}
   
-  .popup-content {
+.popup-content {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px 30px;
     border-radius: 15px;
@@ -143,38 +141,38 @@ body, html {
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     animation: popup-show 0.3s ease;
-  }
+}
   
-  .popup-content h2 {
+.popup-content h2 {
     font-size: 2rem;
     margin-bottom: 15px;
-  }
+}
   
-  .popup-content p {
+.popup-content p {
     font-size: 1rem;
     margin-bottom: 20px;
-  }
+}
   
-  .popup.hidden {
+.popup.hidden {
     opacity: 0;
     pointer-events: none;
-  }
+}
   
-  .popup.visible {
+.popup.visible {
     opacity: 1;
     pointer-events: all;
-  }
+}
   
-  @keyframes popup-show {
+@keyframes popup-show {
     from {
-      transform: scale(0.8);
-      opacity: 0;
+          transform: scale(0.8);
+          opacity: 0;
     }
     to {
-      transform: scale(1);
-      opacity: 1;
+          transform: scale(1);
+        opacity: 1;
     }
-  }
+}
 
 @font-face {
     font-family: 'Caudex';
