@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up - The Witcher</title>
-    <link rel="stylesheet" href="Sign-up.css">
+    <link rel="stylesheet" href="Sign-in.css">
 </head>
 <body>
     <div class="background">
@@ -12,10 +12,8 @@
     </div>
     <div class="form-container">
         <div class="form-content">
-        <img class="logo" src="../assets/Sign Up/Logo.svg" alt="">
-        <form id="signupForm">
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Name" required>
+        <img class="logo" src="../assets/Sign In/Logo.svg" alt="">
+        <form id="signinForm">
 
             <label for="username">Username</label>
             <input type="text" id="username" placeholder="Username" required>
@@ -23,12 +21,9 @@
             <label for="password">Password</label>
             <input type="password" id="password" placeholder="Password" required>
 
-            <label for="confirm-password">Confirm Password</label>
-            <input type="password" id="confirm-password" placeholder="Confirm Password" required>
-
-            <button type="submit" class="btn">Sign Up</button>
+            <button type="submit" class="btn">Sign In</button>
         </form>
-        <p class="footer-text">ARE YOU A WITCHER?</p>
+        <p class="footer-text">BE A WITCHER?</p>
         </div>
     </div>
 
@@ -41,6 +36,6 @@
         </div>
     </div>
 
-    <script src="Sign-up.js"></script>
+    <script src="Sign-in.js"></script>
 </body>
 </html>
