@@ -9,7 +9,7 @@
 <body>
     <header>
         <div class="header-content">
-            <img src="../assets/Prologue/LOGO.svg" alt="The Witcher Logo" class="logo">
+            <img src="../assets/Chapter 1/LOGO.svg" alt="The Witcher Logo" class="logo">
             <button class="profile">
                 <img class="vizima" src="../assets/Choose Region/Vizima.svg" alt="">
                 <div class="welcome">
@@ -30,8 +30,8 @@
     </section>
 
     <section class="prologue">
-        <h2>Prologue</h2> 
-        <h2>Orchard & Vizima</h2>
+        <h1 class="judul">Prologue</h1> 
+        <h3 class="subjudul">White Orchard & Vizima</h3>
         <div class="content">
             <div class="text">
                 <p>The opening cutscene shows Yennefer fleeing a massive battle in White Orchard, leaving behind traces that Geralt and Vesemir follow days later...</p>
