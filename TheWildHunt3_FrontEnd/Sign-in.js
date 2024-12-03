@@ -1,4 +1,3 @@
-// Form submission and popup display logic
 const form = document.getElementById('signupForm');
 const popup = document.getElementById('popup');
 const closePopup = document.getElementById('closePopup');

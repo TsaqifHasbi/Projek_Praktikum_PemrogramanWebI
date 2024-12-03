@@ -1,0 +1,217 @@
+@font-face {
+    font-family: 'TheWitcher';
+    src: url('../assets/Fonts/Thewitcher-jnOj.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Caudex';
+    src: url('../assets/Fonts/Caudex/Caudex-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'CaudexBold';
+    src: url('../assets/Fonts/Caudex/Caudex-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'CaudexBoldItalic';
+    src: url('../assets/Fonts/Caudex/Caudex-BoldItalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Cinzel';
+    src: url('../assets/Fonts/Cinzel/static/Cinzel-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'CinzelBold';
+    src: url('../assets/Fonts/Cinzel/static/Cinzel-Bold.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9eae3;
+    color: #333;
+}
+
+.header-content {
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.welcome p{
+    line-height: 0.2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    height: 120px;
+    margin: 0 0 0 20px;
+}
+
+.profile {
+    font-size: 14px;
+    margin: 0 20px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    background-color: #1A3C2A;
+    color: #fff;
+    padding: 8px 25px;
+    border: none;
+}
+
+.profile .vizima{
+    width: 30px;
+    margin-right: 20px;
+}
+
+.quote-section {
+    display: flex;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #e9eae3;
+    background-image: url(../assets/Prologue/bg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.vesemir-img {
+    width: 750px;
+    margin-right: 20px;
+    padding-left: 60px;
+}
+
+.quote {
+    padding: 80px;
+}
+
+.quote p {
+    margin: 0;
+    font-size: 18px;
+    color: #555;
+}
+
+.quote .qt{
+    margin: 0;
+    font-size: 32px;
+    color: #555;
+    font-family: 'Caudex', Arial, sans-serif;
+}
+
+.quote span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+.prologue {
+    padding: 20px;
+    text-align: center;
+}
+
+.prologue h2 {
+    margin-bottom: 20px;
+    color: #1A3C2A;
+}
+
+.prologue .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.prologue .text {
+    flex: 1;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.prologue img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.events {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.event {
+    width: 30%;
+    text-align: center;
+    background-color: #e9eae3;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.event h3 {
+    font-size: 16px;
+    color: #122b40;
+    margin-bottom: 10px;
+}
+
+.event p {
+    font-size: 14px;
+    color: #555;
+}
+
+.choices {
+    padding: 20px;
+    text-align: center;
+}
+
+.choices h2 {
+    margin-bottom: 20px;
+    color: #1A3C2A;
+}
+
+.choice {
+    margin-bottom: 20px;
+}
+
+.choice p {
+    margin: 0 0 10px;
+    font-size: 14px;
+}
+
+.choice img {
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1A3C2A;
+    color: #fff;
+    font-size: 14px;
+    /* display: flex; */
+}
+
+footer a {
+    color: #ffa500;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .quote-section, .prologue .content, .events {
+        flex-direction: column;
+    }
+
+    .event, .choice {
+        width: 100%;
+    }
+}
