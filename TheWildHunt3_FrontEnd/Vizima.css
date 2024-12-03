@@ -77,6 +77,12 @@ body {
     color: #fff;
     padding: 8px 25px;
     border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.profile:hover{
+    background-color: #4A593D;
 }
 
 .profile .vizima{
@@ -86,11 +92,12 @@ body {
 
 .quote-section {
     display: flex;
+    justify-content: center;
     align-items: center;
     padding: 100px 80px;
-    margin: 80px 0;
+    margin: 120px 0;
     background-color: #e9eae3;
-    background-image: url(../assets/Chapter/bg.svg);
+    background-image: url(../assets/Prologue/bg.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; 
@@ -154,45 +161,117 @@ body {
 .prologue .content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     gap: 20px;
+    background-color: #A8BBA8;
+    padding: 180px 90px;
 }
 
 .prologue .text {
-    flex: 1;
-    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 24px;
+    font-family: 'Caudex', Arial, sans-serif;
     text-align: justify;
 }
 
 .prologue img {
-    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1440px;
+    max-height: 690px;
     border-radius: 10px;
 }
 
 .events {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
-    background-color: #fff;
+    padding: 0 20px;
+    background-color: #e9eae3;
+}
+.dots3{
+    width: 68%;
+    padding: 80px 0 10px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 50px auto;
+}
+  
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #e9eae3;
+    border: 1px solid #1A3C2A;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px 20px 60px 20px;
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+  
+.card img {
+    width: 380px;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+.card p {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333;
+    padding: 10px;
+    margin: 0;
+}
+  
+
+.dots3re{
+    width: 68%;
+    padding: 80px 0 10px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scaleY(-1);
 }
 
 .event {
     width: 30%;
     text-align: center;
     background-color: #e9eae3;
-    padding: 10px;
     border-radius: 10px;
 }
 
 .event h3 {
-    font-size: 16px;
+    font-size: 24px;
     color: #122b40;
     margin-bottom: 10px;
+    font-family: 'CaudexBold', Arial, sans-serif;
 }
 
 .event p {
     font-size: 14px;
+    text-align: justify;
+    padding: 0 120px;
     color: #555;
+    font-family: 'Caudex', Arial, sans-serif;
 }
 
 .choices {
