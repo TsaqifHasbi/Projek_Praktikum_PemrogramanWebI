@@ -41,6 +41,8 @@ body {
     padding: 0;
     background-color: #e9eae3;
     color: #333;
+    display: flex;
+    flex-direction: column;
 }
 
 .header-content {
@@ -79,6 +81,7 @@ body {
     border: none;
     transition: all 0.3s ease;
     cursor: pointer;
+    position: relative;
 }
 
 .profile:hover{
@@ -90,7 +93,7 @@ body {
     margin-right: 20px;
 }
 
-.quote-section {
+#quote-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,6 +104,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; 
+    position: relative;
 }
 
 .vesemir-img {
@@ -111,6 +115,7 @@ body {
 
 .quote {
     padding: 10px;
+    position: relative;
 }
 
 .quote p {
@@ -140,8 +145,9 @@ body {
 }
 
 .prologue {
-    margin-top: 120px;
+    margin-top: 180px;
     text-align: center;
+    position: relative;
 }
 
 .prologue .judul{
@@ -189,8 +195,9 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 0 20px;
-    background-color: #e9eae3;
+    background-color:  transparent;
 }
+
 .dots3{
     width: 68%;
     padding: 80px 0 10px 0;
@@ -203,7 +210,7 @@ body {
 .gallery {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 10px;
     margin: 50px auto;
 }
   
@@ -212,25 +219,27 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #e9eae3;
+    background-color: transparent;
     border: 1px solid #1A3C2A;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     padding: 20px 20px 60px 20px;
     margin: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: visible;
 }
   
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
   
 .card img {
     width: 380px;
     height: auto;
     border-bottom: 1px solid #ddd;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 80px 120px rgba(1, 55, 4, 0.363), 0 6px 6px rgba(9, 33, 1, 0.358);
+    overflow: visible;
+    border-radius: 50%;
 }
   
 .card p {
@@ -251,12 +260,19 @@ body {
     align-items: center;
     transform: scaleY(-1);
 }
-
+.events-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 300px;
+}
 .event {
     width: 30%;
     text-align: center;
-    background-color: #e9eae3;
+    background-color: transparent;
     border-radius: 10px;
+    position: relative;
 }
 
 .event h3 {
@@ -276,44 +292,98 @@ body {
 
 .choices {
     padding: 20px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
 }
 
+.verti-line{
+    width: 2px;
+    height: 580px;
+    background-color: #1A3C2A;
+    margin: 0 auto;
+    opacity: 0.5;
+    border-radius: 5px;
+
+}
 .choices h2 {
+    font-size: 36px;
     margin-bottom: 20px;
+    font-family: 'Cinzel', Arial, sans-serif;
     color: #1A3C2A;
 }
-
+.choices-box {
+    display: flex;
+    gap: 10px;
+    margin: 40px 0;
+    justify-content: center;
+    gap: 60px;
+}
 .choice {
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
 }
 
 .choice p {
-    margin: 0 0 10px;
-    font-size: 14px;
+    font-size: 20px;
+    font-family: 'CaudexBoldItalic', Arial, sans-serif;
+    color: #1A3C2A;
+    text-align: justify;
 }
 
-.choice img {
-    max-width: 200px;
-    border-radius: 10px;
+.choice .left{
+    display: flex;
+    justify-content: end;
+}
+
+.choice .right{
+    display: flex;
+    justify-content: start;
+}
+.choice video{
+    height: 340px;
+    width: 600px;
+    margin: 30px 0;
+}
+.bottom-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../assets/Prologue/bg_under.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    z-index: -1;
 }
 
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #1A3C2A;
-    color: #fff;
-    font-size: 14px;
+    color: #1A3C2A;
+    position: relative;
     /* display: flex; */
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+footer p {
+    margin: 0;
+    font-size: 36px;
+    font-family: 'CaudexBold', Arial, sans-serif;
 }
 
-footer a {
-    color: #ffa500;
+footer .backtop {
+    color: #1A3C2A;
     text-decoration: none;
+    font-size: 24px;
+    font-family: 'CinzelBold', Arial, sans-serif;
 }
 
-footer a:hover {
+footer .backtop:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
