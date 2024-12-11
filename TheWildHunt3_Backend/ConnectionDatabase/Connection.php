@@ -1,6 +1,6 @@
 <?php
 // File: connection.php
-$config = include 'config.php';
+$config = include 'Config.php';
 
 // Create connection
 $conn = new mysqli(

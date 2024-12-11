@@ -1,7 +1,7 @@
 <?php
 // File: Login.php
 session_start();
-$config = include '../Connection Database/config.php';
+$config = include '../AfterTaste/ConnectionDatabase/Config.php';
 $conn = new mysqli(
     $config['host'], 
     $config['username'], 
