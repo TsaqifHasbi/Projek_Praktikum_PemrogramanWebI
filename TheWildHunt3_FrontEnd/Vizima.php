@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Witcher: Chapter Prologue</title>
     <link rel="stylesheet" href="Vizima.css">
+    <link rel="shotcut icon" href="../assets/Sign Up/Logo.svg">
 </head>
 <body>
     <header>
@@ -20,7 +21,7 @@
         </div>
     </header>
 
-    <section class="quote-section">
+    <section id="quote-section">
         <img src="../assets/Prologue/Vesemir.svg" alt="Vesemir" class="vesemir-img">
         <div class="quote">
             <p class="qt">"IF YOU WANT TO REST, COME WITH ME. OR GO AHEAD AND HELP. JUST DON'T MAKE A MESS."</p>
@@ -77,23 +78,33 @@
         </div>
         <img class="dots3re" src="../assets/Prologue/line.svg">
     </section>
-
     <section class="choices">
         <h2>Choose Phase</h2>
-        <div class="choice">
-            <p>"The alliance is dead. See, I killed Letho."</p>
-            <img src="choice1.png" alt="Choice 1">
-        </div>
-        <div class="choice">
-            <p>"That alliance still alive? What happened to Letho?"</p>
-            <img src="choice2.png" alt="Choice 2">
+        <div class="choices-box">
+            <div class="choice">
+                <p class="left">"The alliance is dead. See, I killed Letho."</p>
+                <video controls>
+                    <source src="../assets/Prologue/letho killed.mp4" type="video/webm" />
+                    Browsermu tidak mendukung tag ini, upgrade donk!
+                </video>
+                <p class="left btm">Letho does not appear in The Witcher 3: Wild Hunt.</p>
+            </div>
+            <div class="verti-line"></div>
+            <div class="choice">
+                <p class="right">"That alliance still alive? What happened to Letho?"</p>
+                <video controls>
+                    <source src="../assets/Prologue/letho alive.mp4" type="video/webm" />
+                    Browsermu tidak mendukung tag ini, upgrade donk!
+                </video>
+                <p class="right btm">A secondary quest titled Ghosts of the Past becomes available in which Geralt reunites with Letho, and the two witchers go off to punish some traitors.</p>
+            </div>
         </div>
     </section>
-
     <footer>
-        <p>End of Chapter.</p>
-        <a href="#top">Back to Top</a>
+        <p class="end">End of Chapter.</p>
+        <a class="backtop" href="#quote-section">Back to Top</a> 
     </footer>
+    <div class="bottom-background"></div>
     <script src="Vizima.js"></script>
 </body>
 </html>
