@@ -48,16 +48,16 @@
         <img class="dots3" src="../assets/Chapter2/3 dot.svg">
         <div class="events">
             <div class="event">
-                <h3>The Griffin's Bargain</h3>
-                <p>Geralt and Vesemir arrive in White Orchard, where they learn Yennefer spoke with Nilfgaardian Captain Peter Saar Gwynleve. The captain promises to reveal Yennefer's whereabouts if Geralt eliminates a griffin terrorizing the area. After setting a trap and defeating the beast with Vesemir, they learn Yennefer is headed to Vizima. Before leaving, Yennefer unexpectedly arrives and insists Geralt follow her to meet Emperor Emhyr var Emreis. Vesemir decides to return to Kaer Morhen.</p>
+                <h3>Dudu's Help and Dandelion's Release</h3>
+                <p>To free Dandelion, Geralt enlists the help of his old friend, Dudu Biberveldt, a doppler. Dudu disguises himself as Caleb Menge, the commander of the temple guard, whom Triss killed after being tortured. With the aid of Zoltan, Geralt successfully frees Dandelion. However, Dandelion has little new information about Ciri, except that she was trying to decipher a curse using a phylactery. Dandelion reveals that Ciri had been in contact with Whoreson Junior, a notorious crime boss, and ran from his men after an encounter with witch hunters and Hierarch Hemmelfart. When Ciri teleported to escape, Dandelion was captured and imprisoned.</p>
             </div>
             <div class="event">
-                <h3>A Wild Hunt Encounter</h3>
-                <p>On the way to Vizima, Geralt and Yennefer are attacked by hounds of the Wild Hunt but manage to escape unharmed. They reach Vizima safely, where Emperor Emhyr requests Geralt's help in finding his daughter, Ciri, pursued by the Wild Hunt. Geralt agrees to assist.</p>
+                <h3>Geralt's Tasks in Novigrad</h3>
+                <p>In Novigrad, Geralt reunites with Vernon Roche, now fighting to free Temeria. Roche introduces him to King Radovid V, who asks Geralt to find Philippa Eilhart. Meanwhile, Geralt helps Triss Merigold smuggle mages out and can rekindle their romance before she leaves for Kovir. He also assists Dandelion in starting a cabaret business, but despite these efforts, the search for Ciri stalls.</p>
             </div>
             <div class="event">
-                <h3>Paths to Ciri</h3>
-                <p>Geralt plans to begin his search for Ciri in Velen and team up with Triss Merigold. Yennefer, meanwhile, heads to Skellige to investigate a magical disturbance potentially tied to Ciri.</p>
+                <h3>Ciri's Trail Leads to Skellige</h3>
+                <p>Despite the distractions in Novigrad, Geralt's search for Ciri comes to a dead end. His investigation in Velen led him to Novigrad, and now in the city, the clues stop with Dandelion’s capture. With no more leads in Novigrad, Geralt concludes that the only remaining place to search for his lost daughter is the Isles of Skellige, the next destination in his quest.</p>
             </div>
         </div>
     </section>
@@ -67,15 +67,15 @@
         <div class="gallery">
             <div class="card">
                 <img src="../assets/Chapter2/pic 1.svg" alt="Geralt of Rivia killed the griffin" />
-                <p>Geralt of Rivia killed the griffin</p>
+                <p>Dandelion talking with Geralt of Rivian</p>
             </div>
             <div class="card">
                 <img src="../assets/Chapter2/pic 2.svg" alt="Yennefer manage to escape from the Wild Hunt" />
-                <p>Yennefer manage to escape from the Wild Hunt</p>
+                <p>Vernon Roche and Geralt of Rivia</p>
             </div>
             <div class="card">
                 <img src="../assets/Chapter2/pic 3.svg" alt="First look of Ciri's teenage version" />
-                <p>First look of Ciri's teenage version</p>
+                <p>Ciri talking with Dudu</p>
             </div>
         </div>
         <img class="dots3re" src="../assets/Prologue/line.svg">
@@ -84,21 +84,21 @@
         <h2>Choose Phase</h2>
         <div class="choices-box">
             <div class="choice">
-                <p class="left">"The alliance is dead. See, I killed Letho."</p>
+                <p class="left">“Kill him, Roche. I don't want any trouble”</p>
                 <video controls>
-                    <source src="../assets/Prologue/letho killed.mp4" type="video/webm" />
+                    <source src="../assets/Chapter2/kill roche.mp4" type="video/webm" />
                     Browsermu tidak mendukung tag ini, upgrade donk!
                 </video>
-                <p class="left btm">Letho does not appear in The Witcher 3: Wild Hunt.</p>
+                <p class="left btm">If Geralt sides with Roche and chooses to kill Nilfgaardian soldiers, this can strengthen their bond, as Roche shares Geralt's hostility toward Nilfgaard. This decision is influenced by Roche's personal vendetta against Nilfgaardians, given the destruction of his homeland, Temeria.</p>
             </div>
             <div class="verti-line"></div>
             <div class="choice">
-                <p class="right">"That alliance still alive? What happened to Letho?"</p>
+                <p class="right">“Hard to argue with that”</p>
                 <video controls>
-                    <source src="../assets/Prologue/letho alive.mp4" type="video/webm" />
+                    <source src="../assets/Chapter2/hard to argue.mp4" type="video/webm" />
                     Browsermu tidak mendukung tag ini, upgrade donk!
                 </video>
-                <p class="right btm">A secondary quest titled Ghosts of the Past becomes available in which Geralt reunites with Letho, and the two witchers go off to punish some traitors.</p>
+                <p class="right btm">Alternatively, Geralt can decide to show mercy and spare the Nilfgaardian soldiers. This decision often creates tension between Geralt and Roche, as it signals a more diplomatic or pragmatic stance that contrasts with Roche's more vengeful attitude.</p>
             </div>
         </div>
     </section>
