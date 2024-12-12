@@ -285,10 +285,10 @@ body {
 }
 
 .event h3 {
-    width: 60%;
+    width: 63%;
     font-size: 24px;
     color: #8B2E2E;
-    margin-bottom: 10px;
+    min-height: 2.6em;
     font-family: 'CaudexBold', Arial, sans-serif;
 }
 

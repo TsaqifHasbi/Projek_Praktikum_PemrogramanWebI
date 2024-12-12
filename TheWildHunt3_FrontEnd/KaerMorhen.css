@@ -102,7 +102,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 110px;
+    padding: 0 170px;
     margin: 120px 0;
     background-color: #e9eae3;
     background-image: url(../assets/Prologue/bg.svg);
@@ -274,7 +274,7 @@ body {
     margin-bottom: 300px;
 }
 .event {
-    width: 60%;
+    width: 50%;
     text-align: center;
     background-color: transparent;
     border-radius: 10px;
@@ -285,10 +285,11 @@ body {
 }
 
 .event h3 {
+    width: 63%;
     font-size: 24px;
     color: #4B3A2F;
     text-align: center;
-    margin-bottom: 10px;
+    min-height: 2.6em;
     font-family: 'CaudexBold', Arial, sans-serif;
 }
 
