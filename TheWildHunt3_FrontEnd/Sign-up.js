@@ -13,3 +13,14 @@ form.addEventListener('submit', function (event) {
 document.getElementById('closePopup').onclick = function () {
   window.location.href = 'ChooseRegion.php';
 };
+
+document.getElementById('signupForm').addEventListener('submit', function(event) {
+  const password = document.getElementById('password').value;
+  const confirmPassword = document.getElementById('confirm-password').value;
+
+  if (password !== confirmPassword) {
+      event.preventDefault(); // Mencegah form submit
+      alert('Password dan konfirmasi password tidak sesuai!');
+  }
+});
+

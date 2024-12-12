@@ -1,3 +1,30 @@
+<?php
+session_start();
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $name = $_POST['name'];
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $confirm_password = $_POST['confirm_password'];
+
+    // Validasi apakah password dan confirm password sesuai
+    if ($password !== $confirm_password) {
+        echo "Password dan konfirmasi password tidak sesuai!";
+        exit();
+    }
+
+    // Menyimpan data ke dalam session
+    $_SESSION['signup_data'] = [
+        'name' => $name,
+        'username' => $username,
+        'password' => $password
+    ];
+
+    // Redirect ke halaman Sign-up
+    header('Location: ChooseRegion.php');
+    exit();
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +41,7 @@
     <div class="form-container">
         <div class="form-content">
         <img class="logo" src="../assets/Sign Up/Logo.svg" alt="The Witcher Logo">
-        <form id="signupForm" method="POST">
+        <form id="signupForm" method="POST" action="Sign-up.php">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Name" required>
 
@@ -33,15 +60,5 @@
         </div>
     </div>
     
-    <!-- Popup Confirmation -->
-    <div id="popup" class="popup hidden">
-        <div class="popup-content">
-            <h2>Sign Up Successful!</h2>
-            <p>Welcome to The Witcher Universe!</p>
-            <button class="btn" id="closePopup" onclick="window.location.href='ChooseRegion.php'">Close</button>
-        </div>
-    </div>
-
-    <script src="Sign-up.js"></script>
 </body>
 </html>

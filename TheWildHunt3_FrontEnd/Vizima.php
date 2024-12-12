@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Witcher: Chapter Prologue</title>
-    <link rel="stylesheet" href="Prologue.css">
+    <link rel="stylesheet" href="Vizima.css">
     <link rel="shotcut icon" href="../assets/Sign Up/Logo.svg">
 </head>
 <body>
@@ -105,6 +105,6 @@
         <a class="backtop" href="#quote-section">Back to Top</a> 
     </footer>
     <div class="bottom-background"></div>
-    <script src="Prologue.js"></script>
+    <script src="Vizima.js"></script>
 </body>
 </html>
