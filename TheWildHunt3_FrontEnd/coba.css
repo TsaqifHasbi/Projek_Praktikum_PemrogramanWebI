@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: relative; /* Agar elemen anak bisa menggunakan posisi absolute */
+    min-height: 100vh; /* Pastikan kontainer setidaknya setinggi viewport */
+}
+
+.bottom-background {
+    position: absolute; /* Menggunakan absolute agar tetap di bawah konten */
+    bottom: 0; /* Menempatkan elemen di bagian bawah */
+    left: 0; /* Menempatkan elemen di sisi kiri */
+    width: 100%; /* Lebar 100% */
+    height: 100%; /* Tinggi sesuai kebutuhan */
+    background: url('../assets/Prologue/bg_under.svg') no-repeat center center; /* Ganti dengan path yang benar */
+    background-size: cover; /* Ukuran latar belakang menutupi elemen */
+    z-index: -1; /* Pastikan berada di belakang elemen lain */
+}
+
+.content {
+    position: relative; /* Pastikan konten memiliki posisi relatif */
+    z-index: 1; /* Pastikan konten berada di atas latar belakang */
+    padding: 20px;
+    padding-bottom: 220px; /* Memberikan ruang untuk latar belakang */
+}

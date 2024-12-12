@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Witcher: Chapter Prologue</title>
-    <link rel="stylesheet" href="Vizima.css">
+    <link rel="stylesheet" href="Prologue.css">
     <link rel="shotcut icon" href="../assets/Sign Up/Logo.svg">
 </head>
 <body>
@@ -12,7 +12,7 @@
         <div class="header-content">
             <img src="../assets/Prologue/LOGO.svg" alt="The Witcher Logo" class="logo">
             <button class="profile">
-                <img class="vizima" src="../assets/Choose Region/Vizima.svg" alt="">
+                <img class="region" src="../assets/Choose Region/Vizima.svg" alt="">
                 <div class="welcome">
                     <p>Welcome,</p> 
                     <p class="user">John Doe</p>
@@ -22,7 +22,7 @@
     </header>
 
     <section id="quote-section">
-        <img src="../assets/Prologue/Vesemir.svg" alt="Vesemir" class="vesemir-img">
+        <img src="../assets/Prologue/Vesemir.svg" alt="Vesemir" class="icon">
         <div class="quote">
             <p class="qt">"IF YOU WANT TO REST, COME WITH ME. OR GO AHEAD AND HELP. JUST DON'T MAKE A MESS."</p>
             <span class="qt-who">- Vesemir</span>
@@ -59,7 +59,7 @@
             </div>
         </div>
     </section>
-
+    <div class="bg-compas"></div>
     <section class="scene">
         <img class="dots3" src="../assets/Prologue/line.svg">
         <div class="gallery">
@@ -105,6 +105,6 @@
         <a class="backtop" href="#quote-section">Back to Top</a> 
     </footer>
     <div class="bottom-background"></div>
-    <script src="Vizima.js"></script>
+    <script src="Prologue.js"></script>
 </body>
 </html>

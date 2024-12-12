@@ -11,6 +11,10 @@
     src: url('../assets/Fonts/Caudex/Caudex-Bold.ttf') format('truetype');
 }
 @font-face {
+    font-family: 'CaudexItalic';
+    src: url('../assets/Fonts/Caudex/Caudex-Italic.ttf') format('truetype');
+}
+@font-face {
     font-family: 'CaudexBoldItalic';
     src: url('../assets/Fonts/Caudex/Caudex-BoldItalic.ttf') format('truetype');
 }
@@ -25,7 +29,7 @@
 
 body::before {
     content: "";
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -43,6 +47,7 @@ body {
     color: #333;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .header-content {
@@ -53,7 +58,7 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    top: 60px;
+    top: 40px;
 }
 
 .welcome p{
@@ -75,7 +80,7 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 25px;
-    background-color: #1A3C2A;
+    background-color: #4B3A2F;
     color: #fff;
     padding: 8px 25px;
     border: none;
@@ -85,10 +90,10 @@ body {
 }
 
 .profile:hover{
-    background-color: #4A593D;
+    background-color: #A8A8A8;
 }
 
-.profile .vizima{
+.profile .region{
     width: 30px;
     margin-right: 20px;
 }
@@ -97,7 +102,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px 80px;
+    padding: 0 110px;
     margin: 120px 0;
     background-color: #e9eae3;
     background-image: url(../assets/Prologue/bg.svg);
@@ -107,10 +112,9 @@ body {
     position: relative;
 }
 
-.vesemir-img {
+.icon {
     width: 750px;
     margin-right: 20px;
-    padding-left: 60px;
 }
 
 .quote {
@@ -120,13 +124,13 @@ body {
 
 .quote p {
     margin: 0;
-    color: #1A3C2A;
+    color: #4B3A2F;
 }
 
 .quote .qt{
     margin: 0;
     font-size: 36px;
-    color: #1A3C2A;
+    color: #4B3A2F;
     font-family: 'Cinzel', Arial, sans-serif;
 }
 
@@ -135,7 +139,7 @@ body {
     margin-top: 10px;
     font-weight: bold;
     font-size: 40px;
-    color: #1A3C2A;
+    color: #4B3A2F;
     font-family: 'CinzelBold', Arial, sans-serif;
 }
 
@@ -154,23 +158,25 @@ body {
     font-family: 'CinzelBold', Arial, sans-serif;
     line-height: 0.2;
     font-size: 50px;
-    color: #1A3C2A;
+    color: #4B3A2F;
 }
 
 .prologue .subjudul{
     font-family: 'CinzelBold', Arial, sans-serif;
     line-height: 0.2;
     font-size: 36px;
-    color: #1A3C2A;
+    color: #4B3A2F;
 }
 
 .prologue .content {
     display: flex;
-    justify-content: space-between;
-    align-items: stretch;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
-    background-color: #A8BBA8;
-    padding: 180px 90px;
+    background-color: #A58E7F;
+    height: 700px;
+    padding: 0 90px;
+    color: #4B3A2F;
 }
 
 .prologue .text {
@@ -182,7 +188,7 @@ body {
     text-align: justify;
 }
 
-.prologue img {
+.prologue .img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -220,13 +226,12 @@ body {
     align-items: center;
     text-align: center;
     background-color: transparent;
-    border: 1px solid #1A3C2A;
+    border: 1px solid #4B3A2F;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    overflow: visible;
     padding: 20px 20px 60px 20px;
     margin: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: visible;
 }
   
 .card:hover {
@@ -234,20 +239,21 @@ body {
 }
   
 .card img {
-    width: 380px;
+    width: 350px;
     height: auto;
     border-bottom: 1px solid #ddd;
-    box-shadow: 0 0 80px 120px rgba(1, 55, 4, 0.363), 0 6px 6px rgba(9, 33, 1, 0.358);
+    box-shadow: 0 0 80px 120px rgba(39, 39, 39, 0.363), 0 6px 6px rgba(31, 29, 29, 0.358);
     overflow: visible;
     border-radius: 50%;
 }
   
 .card p {
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
+    font-family: 'CaudexItalic','Arial', sans-serif;
+    font-size: 20px;
     color: #333;
     padding: 10px;
     margin: 0;
+    max-width: 310px; 
 }
   
 
@@ -268,25 +274,29 @@ body {
     margin-bottom: 300px;
 }
 .event {
-    width: 30%;
+    width: 60%;
     text-align: center;
     background-color: transparent;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     position: relative;
 }
 
 .event h3 {
     font-size: 24px;
-    color: #122b40;
+    color: #4B3A2F;
+    text-align: center;
     margin-bottom: 10px;
     font-family: 'CaudexBold', Arial, sans-serif;
 }
 
 .event p {
-    font-size: 14px;
+    font-size: 20px;
     text-align: justify;
-    padding: 0 120px;
-    color: #555;
+    padding: 0 100px;
+    color: #4B3A2F;
     font-family: 'Caudex', Arial, sans-serif;
 }
 
@@ -301,7 +311,7 @@ body {
 .verti-line{
     width: 2px;
     height: 580px;
-    background-color: #1A3C2A;
+    background-color: #4B3A2F;
     margin: 0 auto;
     opacity: 0.5;
     border-radius: 5px;
@@ -311,7 +321,7 @@ body {
     font-size: 36px;
     margin-bottom: 20px;
     font-family: 'Cinzel', Arial, sans-serif;
-    color: #1A3C2A;
+    color: #4B3A2F;
 }
 .choices-box {
     display: flex;
@@ -330,7 +340,7 @@ body {
 .choice p {
     font-size: 20px;
     font-family: 'CaudexBoldItalic', Arial, sans-serif;
-    color: #1A3C2A;
+    color: #4B3A2F;
     text-align: justify;
 }
 
@@ -348,21 +358,22 @@ body {
     width: 600px;
     margin: 30px 0;
 }
+
+
 .bottom-background {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: url('../assets/Prologue/bg_under.svg');
-    background-repeat: no-repeat;
-    background-position: center bottom;
+    height: 110vh;
+    background: url('../assets/Prologue/bg_under.svg') no-repeat center center;
+    background-size: cover; 
     z-index: -1;
 }
 
 footer {
     text-align: center;
-    color: #1A3C2A;
+    color: #4B3A2F;
     position: relative;
     /* display: flex; */
     margin-top: 80px;
@@ -375,7 +386,7 @@ footer p {
 }
 
 footer .backtop {
-    color: #1A3C2A;
+    color: #4B3A2F;
     text-decoration: none;
     font-size: 24px;
     font-family: 'CinzelBold', Arial, sans-serif;
