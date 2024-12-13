@@ -7,21 +7,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = $_POST['password'];
     $confirm_password = $_POST['confirm_password'];
 
-    // Validasi apakah password dan confirm password sesuai
+
     if ($password !== $confirm_password) {
         echo "Password dan konfirmasi password tidak sesuai!";
         exit();
     }
 
-    // Menyimpan data ke dalam session
     $_SESSION['signup_data'] = [
         'name' => $name,
         'username' => $username,
         'password' => $password
     ];
-
-    // Jangan redirect di sini dulu
-    // Redirect hanya setelah popup ditutup di JavaScript
+    //  exit();
+   ?>  console.log("succes ");
+   <?php
 }
 ?>
 
@@ -40,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="form-container">
         <div class="form-content">
             <img class="logo" src="../assets/Sign Up/Logo.svg" alt="The Witcher Logo">
-            <form id="signupForm" method="POST" action="Sign-up.php">
+            <form id="signupForm" method="POST">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Name" required>
 
@@ -76,7 +75,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <button class="btn" id="closeValidationPopup">Close</button>
         </div>
     </div>
-
 
     <script src="Sign-up.js"></script>
 </body>

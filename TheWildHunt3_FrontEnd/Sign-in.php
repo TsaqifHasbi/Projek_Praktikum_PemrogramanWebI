@@ -1,7 +1,6 @@
 <?php
-session_start(); // Mulai sesi
+session_start();
 
-// Koneksi ke database
 $config = include 'ConnectionDatabase/Config.php';
 $conn = new mysqli(
     $config['host'],
@@ -18,7 +17,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $conn->real_escape_string($_POST['username']);
     $password = $conn->real_escape_string($_POST['password']);
 
-    // Query untuk mendapatkan user berdasarkan username dan password
     $stmt = $conn->prepare("SELECT region FROM login_witcher WHERE username = ? AND password = ?");
     $stmt->bind_param("ss", $username, $password);
     $stmt->execute();
@@ -26,12 +24,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($result->num_rows === 1) {
         $row = $result->fetch_assoc();
-        $region = $row['region']; // Ambil region dari hasil query
+        $region = $row['region'];
 
-        // Simpan username di session
         $_SESSION['username'] = $username;
 
-        // Redirect berdasarkan region
         switch ($region) {
             case 'Vizima':
                 header("Location: Vizima.php");
@@ -49,8 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 header("Location: KaerMorhen.php");
                 break;
             default:
-                // Jika region tidak sesuai, arahkan ke halaman default
-                header("Location: DefaultRegion.php");
+                header("Location: Sign-up.php");
                 break;
         }
         exit();
