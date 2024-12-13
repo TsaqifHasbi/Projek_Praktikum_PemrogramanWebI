@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'TheWitcher';
+    src: url('../assets/Fonts/Thewitcher-jnOj.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Caudex';
+    src: url('../assets/Fonts/Caudex/Caudex-Regular.ttf') format('truetype');
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    background: url('../assets/Edit_Profile/Background.svg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.header-content {
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    top: 40px;
+}
+
+.welcome p{
+    line-height: 0.2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    height: 100px;
+    margin: 0 0 0 40px;
+}
+
+.profile {
+    font-size: 14px;
+    margin: 0 40px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    background-color: #1A3C2A;
+    color: #fff;
+    padding: 8px 25px;
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.profile:hover{
+    background-color: #4A593D;
+}
+
+.profile .region{
+    width: 30px;
+    margin-right: 20px;
+}
+.contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.container {
+    width: 100vh;
+    height: 50vh;
+    margin: 50px auto;
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 60px;
+    border: 1px solid rgba(255, 255, 255, 0.371);
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.header .nav{
+    margin: 0;
+    font-size: 20px;
+    font-family: 'TheWitcher';
+}
+.header .nav:hover{
+    cursor: pointer;
+    color: #FFC857;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.content{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.form-group {
+    margin: 30px 0;
+}
+
+.form-group label {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Caudex', Arial, sans-serif;
+    padding: 15px 25px;
+}
+
+.form-group input {
+    width: 40vh;
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+    font-size: 14px;
+}
+
+.form-group select{
+    width: 44.3vh;
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+    font-size: 14px;
+}
+
+.form-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.form-buttons .save {
+    background: #d32f2f;
+    color: white;
+    width: 100%;
+}
+
+.actions button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    background: #d32f2f;
+    color: white;
+}

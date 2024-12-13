@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Settings - User Admin</title>
-        <link rel="stylesheet" href="settingAdmin.css">
+        <link rel="stylesheet" href="settingUser.css">
         <link rel="shotcut icon" href="../assets/Sign Up/Logo.svg">
     </head>
     <body>
@@ -23,8 +23,7 @@
         <div class="contain">
             <div class="container">
                 <div class="header">
-                    <a href="settingAdmin.php"><h1 class="nav">Settings</h1></a>
-                    <a href="userAdmin.php"><h1 class="nav">User</h1></a>
+                    <a href="settingUser.php"><h1 class="nav">Settings</h1></a>
                 </div>
                 <hr>
                 <!-- User Form -->
