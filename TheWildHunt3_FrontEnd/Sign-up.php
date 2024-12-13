@@ -7,9 +7,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = $_POST['password'];
     $confirm_password = $_POST['confirm_password'];
 
-
     if ($password !== $confirm_password) {
-        echo "Password dan konfirmasi password tidak sesuai!";
+        echo json_encode(['status' => 'error', 'message' => 'Password tidak cocok']);
         exit();
     }
 
@@ -18,9 +17,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'username' => $username,
         'password' => $password
     ];
-    //  exit();
-   ?>  console.log("succes ");
-   <?php
+
+    echo json_encode(['status' => 'success', 'redirect' => 'ChooseRegion.php']);
+    exit();
 }
 ?>
 
@@ -39,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="form-container">
         <div class="form-content">
             <img class="logo" src="../assets/Sign Up/Logo.svg" alt="The Witcher Logo">
-            <form id="signupForm" method="POST">
+            <form id="signupForm" method="POST" action="Sign-up.php">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Name" required>
 
@@ -62,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div id="popup" class="popup hidden">
         <div class="popup-content">
             <h2>Sign Up Successful!</h2>
-            <p>Welcome to The Witcher Universe!</p>
+            <p>The time has come, Witcher. Choose your region and step into a world of beasts, sorcery, and untold dangers!</p>
             <button class="btn" id="closePopup">Close</button>
         </div>
     </div>

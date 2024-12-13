@@ -15,11 +15,26 @@
             <img class="logo" src="../assets/First_Page/Logo.svg" alt="">
             <p class="subtitle">ONE OF THE MOST ACCLAIMED RPG OF ALL TIME</p>
             <div class="buttons">
-                <a href="Sign-up.php"><button class="btn">Sign Up</button></a>
-                <a href="Sign-in.php"><button class="btn">Sign In</button></a>
+                <form id="signupForm" action="LandingPage.php" method="POST">
+                    <input type="hidden" name="action" value="sign-up">
+                    <button type="submit" class="btn" id="signupBtn">Sign Up</button>
+                </form>
+                <form id="signinForm" action="" method="POST">
+                    <input type="hidden" name="action" value="sign-in">
+                    <button type="submit" class="btn" id="signinBtn">Sign In</button>
+                </form>
             </div>
         </div>
     </div>
-  <script src="LandingPage.js"></script>
+
+    <!-- Popup Loading -->
+    <div id="loadingPopup" class="loading-popup">
+        <div class="popup-content">
+            <p>Loading...</p>
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <script src="LandingPage.js"></script>
 </body>
 </html>
