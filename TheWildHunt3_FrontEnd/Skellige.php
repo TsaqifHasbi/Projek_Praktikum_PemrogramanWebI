@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['username'])) {
+    header("Location: Sign-in.php");
+    exit();
+}
+
+$username = $_SESSION['username'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +26,7 @@
                 <img class="region" src="../assets/Choose Region/Skellige.svg" alt="">
                 <div class="welcome">
                     <p>Welcome,</p> 
-                    <p class="user">John Doe</p>
+                    <p class="user"><?php echo htmlspecialchars($username); ?></p>
                 </div>
             </button>
         </div>
