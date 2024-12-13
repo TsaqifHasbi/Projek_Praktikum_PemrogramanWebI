@@ -1,5 +1,4 @@
 <?php
-// Mulai session
 session_start();
 
 // Memastikan data sign-up tersedia di session
@@ -14,7 +13,7 @@ $signup_data = $_SESSION['signup_data'];
 // Include konfigurasi dari Config.php
 $config = include 'ConnectionDatabase/Config.php'; // Pastikan path ke Config.php benar
 
-// Pastikan konfigurasi terisi dengan benar
+// Memastikan konfigurasi terisi dengan benar
 if (!$config) {
     die("Gagal memuat konfigurasi database.");
 }
@@ -49,12 +48,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit();
     }
 
-    // Siapkan query untuk memasukkan data ke dalam database
+    // Menyiapkan query untuk memasukkan data ke dalam database
     $name = $signup_data['name'];
     $username = $signup_data['username'];
     $password = $signup_data['password'];
 
-    // Masukkan data ke database
+    // Memasukkan data ke database
     $stmt = $conn->prepare("INSERT INTO login_witcher (name, username, password, region) VALUES (?, ?, ?, ?)");
     $stmt->bind_param("ssss", $name, $username, $password, $region);
 

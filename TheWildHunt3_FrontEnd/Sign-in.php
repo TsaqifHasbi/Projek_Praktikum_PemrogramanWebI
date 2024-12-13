@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($result->num_rows === 1) {
         $row = $result->fetch_assoc();
-        $region = trim($row['region']);
+        $region = $row['region']; // Ambil region dari hasil query
 
         // Simpan username di session
         $_SESSION['username'] = $username;

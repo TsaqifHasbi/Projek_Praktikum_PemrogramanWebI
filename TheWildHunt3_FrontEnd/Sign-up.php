@@ -20,9 +20,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'password' => $password
     ];
 
-    // Redirect ke halaman Sign-up
-    header('Location: ChooseRegion.php');
-    exit();
+    // Jangan redirect di sini dulu
+    // Redirect hanya setelah popup ditutup di JavaScript
 }
 ?>
 
@@ -40,25 +39,45 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
     <div class="form-container">
         <div class="form-content">
-        <img class="logo" src="../assets/Sign Up/Logo.svg" alt="The Witcher Logo">
-        <form id="signupForm" method="POST" action="Sign-up.php">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Name" required>
+            <img class="logo" src="../assets/Sign Up/Logo.svg" alt="The Witcher Logo">
+            <form id="signupForm" method="POST" action="Sign-up.php">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
 
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" placeholder="Username" required>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Username" required>
 
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="Password" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
 
-            <label for="confirm-password">Confirm Password</label>
-            <input type="password" id="confirm-password" name="confirm_password" placeholder="Confirm Password" required>
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm_password" placeholder="Confirm Password" required>
 
-            <button type="submit" class="btn">Sign Up</button>
-        </form>
-        <a href="Sign-in.php" class="td"><p class="footer-text">ARE YOU A WITCHER?</p></a>
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+            <a href="Sign-in.php" class="td"><p class="footer-text">ARE YOU A WITCHER?</p></a>
         </div>
     </div>
-    
+
+    <!-- Popup Confirmation -->
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <h2>Sign Up Successful!</h2>
+            <p>Welcome to The Witcher Universe!</p>
+            <button class="btn" id="closePopup">Close</button>
+        </div>
+    </div>
+
+    <!-- Popup Validasi Password Tidak Sesuai -->
+    <div id="validationPopup" class="popup hidden">
+        <div class="popup-content">
+            <h2>Oops!</h2>
+            <p>Not Every Contract Is Fulfilled. Your Passwords Don't Match!</p>
+            <button class="btn" id="closeValidationPopup">Close</button>
+        </div>
+    </div>
+
+
+    <script src="Sign-up.js"></script>
 </body>
 </html>

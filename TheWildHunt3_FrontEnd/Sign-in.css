@@ -162,6 +162,7 @@ form input:focus {
 .popup.visible {
     opacity: 1;
     pointer-events: all;
+    display: flex;
 }
   
 @keyframes popup-show {
