@@ -35,9 +35,9 @@ $username = $_SESSION['username'];
     <section id="quote-section">
         <img src="../assets/Chapter3/Yennefer.svg" alt="Vesemir" class="icon">
         <div class="quote">
-            <p class="qt">"Novigrad is a city of opportunities, my friend. If you don't mind risking your neck, that is."</p>
-            <span class="qt-who">- Dandelion</span>
-            <p class="quote-desc">This quote reflects Dandelion's perspective on Novigrad's complex and dangerous nature. As a free city, Novigrad is a melting pot of culture, trade, and power struggles, attracting all manner of people from wealthy merchants to outlaws.</p>
+            <p class="qt">"You think these Skelligers are stubborn? You should meet their storms."</p>
+            <span class="qt-who">- YENNEFER</span>
+            <p class="quote-desc">This line reflects Yennefer's sharp wit and her ability to see the humor in challenging situations. It could be said during one of her interactions with the Skelligers, perhaps when dealing with their unyielding personalities or traditions. Skelligers are renowned for their resilience and pride, qualities mirrored in the harsh, stormy environment of their islands.</p>
         </div>
     </section>
 
@@ -49,8 +49,8 @@ $username = $_SESSION['username'];
                 <img src="../assets/Chapter3/pic 0.svg" alt="Prologue Scene">
             </div>
             <div class="text">
-                <p class="para1">In the city of Novigrad, the influence of the Church of the Eternal Fire grows, leading to the persecution of anyone deemed "other," such as non-humans, mages, and witchers. Geralt navigates this hostile environment while searching for clues about Ciri and his old friend, Triss Merigold, who is in hiding and struggling to make ends meet. After helping Triss out of a difficult situation, she directs Geralt to Corinne Tilly, a dream seer, who reveals that Ciri had been in contact with Dandelion.</p>
-                <p class="para2">With the information from Corinne, Geralt enlists the help of old friends like Zoltan Chivay and Sigismund Dijkstra, now a crime boss in Novigrad's underworld. Their search leads Geralt across the city, with Triss playing a key role in locating Dandelion, who is being held under the Eternal Fire's main temple. The investigation uncovers a web of intrigue, setting the stage for a deeper dive into the dark secrets of Novigrad.</p>
+                <p class="para1">Geralt arrives in the Isles of Skellige after surviving a shipwreck caused by raiders and reaches Kaer Trolde during King Bran Tuirseach's funeral. At the wake, he reunites with Yennefer and Crach an Craite, who leads the an Craite clan. Yennefer enlists Geralt's help to steal a magical mask from the druid's laboratory, an artifact that reveals visions of the past. Using it, they learn Ciri was pursued by the Wild Hunt and that the village of Lofoten was recently attacked.</p>
+                <p class="para2">The villagers tell Geralt and Yennefer about Craven, a man who fled during the Wild Hunt’s attack and later went to a sacred garden to kill a werewolf. Unfortunately, Craven died in the attempt. Undeterred, Yennefer uses necromancy to temporarily reanimate his corpse, forcing it to recount the events leading up to his death and provide vital information about Ciri's fate.</p>
             </div>
         </div>
     </section>
@@ -59,16 +59,16 @@ $username = $_SESSION['username'];
         <img class="dots3" src="../assets/Chapter3/3 dot.svg">
         <div class="events">
             <div class="event">
-                <h3>The Griffin's Bargain</h3>
-                <p>Geralt and Vesemir arrive in White Orchard, where they learn Yennefer spoke with Nilfgaardian Captain Peter Saar Gwynleve. The captain promises to reveal Yennefer's whereabouts if Geralt eliminates a griffin terrorizing the area. After setting a trap and defeating the beast with Vesemir, they learn Yennefer is headed to Vizima. Before leaving, Yennefer unexpectedly arrives and insists Geralt follow her to meet Emperor Emhyr var Emreis. Vesemir decides to return to Kaer Morhen.</p>
+                <h3>Skjall's Story and Ciri's Escape</h3>
+                <p>Through necromancy, Yennefer and Geralt learn that the corpse, Skjall, was a young man who once helped Ciri. He brought her and the masked elf to his village after they mysteriously fell from the sky. While recovering from her injuries, Ciri received instructions from the masked elf about a meeting place. Skjall aided her escape when the Wild Hunt arrived but was knocked unconscious after witnessing the elf take Ciri away on a boat. When he awoke, the boat had returned, carrying only a shrunken, disfigured humanoid resembling Uma, the misshapen figure Geralt once saw in Velen.</p>
             </div>
             <div class="event">
-                <h3>A Wild Hunt Encounter</h3>
-                <p>On the way to Vizima, Geralt and Yennefer are attacked by hounds of the Wild Hunt but manage to escape unharmed. They reach Vizima safely, where Emperor Emhyr requests Geralt's help in finding his daughter, Ciri, pursued by the Wild Hunt. Geralt agrees to assist.</p>
+                <h3>Events in Skellige</h3>
+                <p>The information about Uma provides a lead, but Geralt has other matters to address in Skellige. He can rekindle his romance with Yennefer by helping her capture a djinn to break the bond of fate tying them together. Additionally, Geralt can assist in determining Skellige's next ruler by supporting one of the an Craite children for the throne. Once his business in Skellige is concluded, Geralt departs to retrieve Uma in Velen.</p>
             </div>
             <div class="event">
-                <h3>Paths to Ciri</h3>
-                <p>Geralt plans to begin his search for Ciri in Velen and team up with Triss Merigold. Yennefer, meanwhile, heads to Skellige to investigate a magical disturbance potentially tied to Ciri.</p>
+                <h3>Uma and Nilfgaard's Demands</h3>
+                <p>Geralt successfully retrieves Uma and begins the journey back to Kaer Morhen. However, Nilfgaardian troops intercept him, delivering a summons from Emperor Emhyr. In Vizima, Geralt and Yennefer explain their findings to the Emperor and theorize that Uma is cursed, requiring Kaer Morhen’s resources to lift it. Although the Emperor remains unimpressed, he reluctantly allows them to continue their work.</p>
             </div>
         </div>
     </section>
@@ -78,15 +78,15 @@ $username = $_SESSION['username'];
         <div class="gallery">
             <div class="card">
                 <img src="../assets/Chapter3/pic 1.svg" alt="Geralt of Rivia killed the griffin" />
-                <p>Geralt of Rivia killed the griffin</p>
+                <p>The Mysterious Elf helped Ciri evade the Wild Hunt</p>
             </div>
             <div class="card">
                 <img src="../assets/Chapter3/pic 2.svg" alt="Yennefer manage to escape from the Wild Hunt" />
-                <p>Yennefer manage to escape from the Wild Hunt</p>
+                <p>Uma (Ugliest Man Alive)</p>
             </div>
             <div class="card">
                 <img src="../assets/Chapter3/pic 3.svg" alt="First look of Ciri's teenage version" />
-                <p>First look of Ciri's teenage version</p>
+                <p>Ciri and Skjall</p>
             </div>
         </div>
         <img class="dots3re" src="../assets/Chapter3/line.svg">
@@ -95,21 +95,21 @@ $username = $_SESSION['username'];
         <h2>Choose Phase</h2>
         <div class="choices-box">
             <div class="choice">
-                <p class="left">"The alliance is dead. See, I killed Letho."</p>
+                <p class="left">“I'll help you, Cerys.”</p>
                 <video controls>
-                    <source src="../assets/Prologue/letho killed.mp4" type="video/webm" />
+                    <source src="../assets/Chapter3/help cerys.mp4" type="video/webm" />
                     Browsermu tidak mendukung tag ini, upgrade donk!
                 </video>
-                <p class="left btm">Letho does not appear in The Witcher 3: Wild Hunt.</p>
+                <p class="left btm">The true culprit behind the attacks is revealed and Cerys will be crowned Queen of Skellige. She will then forgo raiding other countries to focus on the Isles, making them prosper under her leadership.</p>
             </div>
             <div class="verti-line"></div>
             <div class="choice">
-                <p class="right">"That alliance still alive? What happened to Letho?"</p>
+                <p class="right">“Going with Hjalmar”</p>
                 <video controls>
-                    <source src="../assets/Prologue/letho alive.mp4" type="video/webm" />
+                    <source src="../assets/Chapter3/follow hjalmar.mp4" type="video/webm" />
                     Browsermu tidak mendukung tag ini, upgrade donk!
                 </video>
-                <p class="right btm">A secondary quest titled Ghosts of the Past becomes available in which Geralt reunites with Letho, and the two witchers go off to punish some traitors.</p>
+                <p class="right btm">The true culprit behind the attack is never revealed but by shedding the blood of the remaining berserkers he clears the family name and is crowned King of Skellige. He will then increase raids against Nilfgaard, even at the cost of his people's lives.</p>
             </div>
         </div>
     </section>

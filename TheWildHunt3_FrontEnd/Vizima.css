@@ -274,10 +274,9 @@ body {
     margin-bottom: 300px;
 }
 .event {
-    width: 60%;
+    width: 50%;
     text-align: center;
     background-color: transparent;
-    border-radius: 10px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -285,10 +284,11 @@ body {
 }
 
 .event h3 {
+    width: 63%;
     font-size: 24px;
     color: #1A3C2A;
     text-align: center;
-    margin-bottom: 10px;
+    min-height: 2.6em;
     font-family: 'CaudexBold', Arial, sans-serif;
 }
 
