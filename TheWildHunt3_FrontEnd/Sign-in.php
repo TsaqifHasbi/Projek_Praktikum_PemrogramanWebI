@@ -13,9 +13,9 @@ if ($conn->connect_error) {
     die("Database connection failed: " . $conn->connect_error);
 }
 
-$error = ""; // Variabel untuk menyimpan pesan error
-$success = false; // Variabel untuk status login berhasil
-$region = ""; // Menyimpan region setelah login berhasil
+$error = ""; 
+$success = false; 
+$region = ""; 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $conn->real_escape_string(trim($_POST['username']));
@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $region = $row['region'];
 
             $_SESSION['username'] = $username;
-            $_SESSION['region'] = $region; // Menyimpan region di session
+            $_SESSION['region'] = $region; 
 
             // Menandai login berhasil
             $success = true;

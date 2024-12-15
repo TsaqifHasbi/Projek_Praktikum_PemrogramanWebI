@@ -7,6 +7,39 @@ if (!isset($_SESSION['username'])) {
 }
 
 $username = $_SESSION['username'];
+
+$config = include 'ConnectionDatabase/Config.php';
+$conn = new mysqli(
+    $config['host'],
+    $config['username'],
+    $config['password'],
+    $config['database']
+);
+
+// Cek koneksi
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Ambil region pengguna
+$sql = "SELECT region FROM login_witcher WHERE username = ?";
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("s", $username);
+$stmt->execute();
+$result = $stmt->get_result();
+if ($result->num_rows > 0) {
+    $row = $result->fetch_assoc();
+    $region = $row['region'];
+} else {
+    $region = 'default_region'; // Nilai default jika region tidak ditemukan
+}
+$stmt->close();
+
+// Daftar username admin
+$adminUsers = ['AdminDeef', 'AdminPaun', 'AdminQif'];
+
+// Tentukan apakah user adalah admin
+$isAdmin = in_array($username, $adminUsers);
 ?>
 
 <!DOCTYPE html>
@@ -21,9 +54,11 @@ $username = $_SESSION['username'];
 <body>
     <header>
         <div class="header-content">
-            <img src="../assets/Prologue/LOGO.svg" alt="The Witcher Logo" class="logo">
-            <button class="profile">
-                <img class="region" src="../assets/Choose Region/Skellige.svg" alt="">
+            <a href="Skellige.php">
+                <img src="../assets/Sign In/Logo.svg" alt="The Witcher Logo" class="logo">
+            </a>
+            <button class="profile" onclick="window.location.href='<?= $isAdmin ? 'settingAdmin.php' : 'settingUser.php' ?>'">
+            <img class="region" src="../assets/Choose Region/<?= htmlspecialchars($region) ?>.svg" alt="">
                 <div class="welcome">
                     <p>Welcome,</p> 
                     <p class="user"><?php echo htmlspecialchars($username); ?></p>

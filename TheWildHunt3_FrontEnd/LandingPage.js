@@ -13,6 +13,7 @@ function hideLoadingPopup() {
     loadingPopup.style.display = 'none';
 }
 
+
 /// Event listener untuk tombol Sign Up
 signupBtn.addEventListener('click', function(event) {
   event.preventDefault();  
