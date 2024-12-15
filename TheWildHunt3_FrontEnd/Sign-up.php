@@ -30,15 +30,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up - The Witcher</title>
     <link rel="stylesheet" href="Sign-up.css">
-    <link rel="shotcut icon" href="../assets/Sign Up/Logo.svg">
+    <link rel="shotcut icon" href="assets/Sign Up/Logo.svg">
 </head>
 <body>
     <div class="background">
-        <img src="../assets/Sign Up/Background.png" alt="The Witcher Background" class="bg-image">
+        <img src="assets/Sign Up/Background.png" alt="The Witcher Background" class="bg-image">
     </div>
     <div class="form-container">
         <div class="form-content">
-            <img class="logo" src="../assets/Sign Up/Logo.svg" alt="The Witcher Logo">
+            <img class="logo" src="assets/Sign Up/Logo.svg" alt="The Witcher Logo">
             <form id="signupForm" method="POST" action="Sign-up.php">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Name" required>

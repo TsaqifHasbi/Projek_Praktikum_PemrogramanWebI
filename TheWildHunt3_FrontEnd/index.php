@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Witcher Wild Hunt</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="shotcut icon" href="../assets/Sign Up/Logo.svg">
+    <link rel="shotcut icon" href="assets/Sign Up/Logo.svg">
 </head>
 <body>
     <div class="container">
         <div class="background">
-            <img src="../assets/First_Page/Background.png" alt="Background" class="bg-image">
+            <img src="assets/First_Page/Background.png" alt="Background" class="bg-image">
         </div>
         <div class="content">
-            <img class="logo" src="../assets/First_Page/Logo.svg" alt="">
+            <img class="logo" src="assets/First_Page/Logo.svg" alt="">
             <p class="subtitle">ONE OF THE MOST ACCLAIMED RPG OF ALL TIME</p>
             <div class="buttons">
                 <form id="signupForm" action="Sign-up.php" method="POST">

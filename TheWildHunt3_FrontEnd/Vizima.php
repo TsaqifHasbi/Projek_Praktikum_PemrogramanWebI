@@ -50,16 +50,16 @@ $isAdmin = in_array($username, $adminUsers);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Witcher: Chapter Prologue</title>
     <link rel="stylesheet" href="Vizima.css">
-    <link rel="shotcut icon" href="../assets/Sign Up/Logo.svg">
+    <link rel="shotcut icon" href="assets/Sign Up/Logo.svg">
 </head>
 <body>
     <header>
         <div class="header-content">
             <a href="Vizima.php">
-                <img src="../assets/Prologue/Logo.svg" alt="The Witcher Logo" class="logo">
+                <img src="assets/Prologue/Logo.svg" alt="The Witcher Logo" class="logo">
             </a>
             <button class="profile" onclick="window.location.href='<?= $isAdmin ? 'settingAdmin.php' : 'settingUser.php' ?>'">
-            <img class="region" src="../assets/Choose Region/<?= htmlspecialchars($region) ?>.svg" alt="">
+            <img class="region" src="assets/Choose Region/<?= htmlspecialchars($region) ?>.svg" alt="">
                 <div class="welcome">
                     <p>Welcome,</p> 
                     <p class="user"><?php echo htmlspecialchars($username); ?></p>
@@ -70,7 +70,7 @@ $isAdmin = in_array($username, $adminUsers);
 
     <section id="quote-section">
         <div class="quote-sect">
-            <img src="../assets/Prologue/Vesemir.svg" alt="Vesemir" class="icon">
+            <img src="assets/Prologue/Vesemir.svg" alt="Vesemir" class="icon">
             <div class="quote">
                 <p class="qt">"IF YOU WANT TO REST, COME WITH ME. OR GO AHEAD AND HELP. JUST DON'T MAKE A MESS."</p>
                 <span class="qt-who">- Vesemir</span>
@@ -83,7 +83,7 @@ $isAdmin = in_array($username, $adminUsers);
         <h1 class="judul">Prologue</h1> 
         <h3 class="subjudul">White Orchard & Vizima</h3>
         <div class="content">
-            <img src="../assets/Prologue/pic 0.svg" alt="Prologue Scene">
+            <img src="assets/Prologue/pic 0.svg" alt="Prologue Scene">
             <div class="text">
                 <p class="para1">The opening cutscene shows Yennefer fleeing a massive battle in White Orchard, leaving behind traces that Geralt and Vesemir follow days later. The story then transitions to Kaer Morhen, the Witcher stronghold, where Geralt awakens in a guest room.</p>
                 <p class="para2">After brief tutorials on movement and combat, the Wild Hunt suddenly appears, revealing that Geralt is dreaming of past events. Upon waking, he discusses the dream with Vesemir, and they continue tracking Yennefer as depicted in the opening scene.</p>
@@ -92,7 +92,7 @@ $isAdmin = in_array($username, $adminUsers);
     </section>
     <div class="compass-left"></div>
     <section class="events-section">
-        <img class="dots3" src="../assets/Prologue/3 dot.svg">
+        <img class="dots3" src="assets/Prologue/3 dot.svg">
         <div class="events">
             <div class="event">
                 <h3>The Griffin's Bargain</h3>
@@ -110,22 +110,22 @@ $isAdmin = in_array($username, $adminUsers);
     </section>
     <div class="compass-right"></div>
     <section class="scene">
-        <img class="line" src="../assets/Prologue/line.svg">
+        <img class="line" src="assets/Prologue/line.svg">
         <div class="gallery">
             <div class="card">
-                <img src="../assets/Prologue/pic 1.svg" alt="Geralt of Rivia killed the griffin" />
+                <img src="assets/Prologue/pic 1.svg" alt="Geralt of Rivia killed the griffin" />
                 <p>Geralt of Rivia killed the griffin</p>
             </div>
             <div class="card">
-                <img src="../assets/Prologue/pic 2.svg" alt="Yennefer manage to escape from the Wild Hunt" />
+                <img src="assets/Prologue/pic 2.svg" alt="Yennefer manage to escape from the Wild Hunt" />
                 <p>Yennefer manage to escape from the Wild Hunt</p>
             </div>
             <div class="card">
-                <img src="../assets/Prologue/pic 3.svg" alt="First look of Ciri's teenage version" />
+                <img src="assets/Prologue/pic 3.svg" alt="First look of Ciri's teenage version" />
                 <p>First look of Ciri's teenage version</p>
             </div>
         </div>
-        <img class="line-re" src="../assets/Prologue/line.svg">
+        <img class="line-re" src="assets/Prologue/line.svg">
     </section>
     <section class="choices">
         <h2>Choose Phase</h2>
@@ -133,7 +133,7 @@ $isAdmin = in_array($username, $adminUsers);
             <div class="choice">
                 <p class="left">"The alliance is dead. See, I killed Letho."</p>
                 <video controls>
-                    <source src="../assets/Prologue/letho killed.mp4" type="video/webm" />
+                    <source src="assets/Prologue/letho killed.mp4" type="video/webm" />
                     Browsermu tidak mendukung tag ini, upgrade donk!
                 </video>
                 <p class="left btm">Letho does not appear in The Witcher 3: Wild Hunt.</p>
@@ -142,7 +142,7 @@ $isAdmin = in_array($username, $adminUsers);
             <div class="choice">
                 <p class="right">"That alliance still alive? What happened to Letho?"</p>
                 <video controls>
-                    <source src="../assets/Prologue/letho alive.mp4" type="video/webm" />
+                    <source src="assets/Prologue/letho alive.mp4" type="video/webm" />
                     Browsermu tidak mendukung tag ini, upgrade donk!
                 </video>
                 <p class="right btm">A secondary quest titled Ghosts of the Past becomes available in which Geralt reunites with Letho, and the two witchers go off to punish some traitors.</p>

@@ -176,6 +176,6 @@ form input:focus {
 
 @font-face {
     font-family: 'Caudex';
-    src: url('../assets/Fonts/Caudex/Caudex-Regular.ttf') format('truetype');
+    src: url('assets/Fonts/Caudex/Caudex-Regular.ttf') format('truetype');
 }
   

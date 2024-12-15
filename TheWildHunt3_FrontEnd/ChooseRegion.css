@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'TheWitcher';
-    src: url('../assets/Fonts/Thewitcher-jnOj.ttf') format('truetype');
+    src: url('assets/Fonts/Thewitcher-jnOj.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Caudex';
-    src: url('../assets/Fonts/Caudex/Caudex-Regular.ttf') format('truetype');
+    src: url('assets/Fonts/Caudex/Caudex-Regular.ttf') format('truetype');
 }
 
 body, html {

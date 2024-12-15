@@ -49,16 +49,16 @@ $isAdmin = in_array($username, $adminUsers);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Witcher: Chapter II</title>
     <link rel="stylesheet" href="Novigrad.css">
-    <link rel="shotcut icon" href="../assets/Sign Up/Logo.svg">
+    <link rel="shotcut icon" href="assets/Sign Up/Logo.svg">
 </head>
 <body>
     <header>
         <div class="header-content">
             <a href="Novigrad.php">
-                <img src="../assets/Prologue/Logo.svg" alt="The Witcher Logo" class="logo">
+                <img src="assets/Prologue/Logo.svg" alt="The Witcher Logo" class="logo">
             </a>
             <button class="profile" onclick="window.location.href='<?= $isAdmin ? 'settingAdmin.php' : 'settingUser.php' ?>'">
-            <img class="region" src="../assets/Choose Region/<?= htmlspecialchars($region) ?>.svg" alt="">
+            <img class="region" src="assets/Choose Region/<?= htmlspecialchars($region) ?>.svg" alt="">
                 <div class="welcome">
                     <p>Welcome,</p> 
                     <p class="user"><?php echo htmlspecialchars($username); ?></p>
@@ -69,7 +69,7 @@ $isAdmin = in_array($username, $adminUsers);
 
     <section id="quote-section">
         <div class="quote-sect">
-            <img src="../assets/Chapter2/Dandelion.svg" alt="Vesemir" class="icon">
+            <img src="assets/Chapter2/Dandelion.svg" alt="Vesemir" class="icon">
             <div class="quote">
                 <p class="qt">"Novigrad is a city of opportunities, my friend. If you don't mind risking your neck, that is."</p>
                 <span class="qt-who">- Dandelion</span>
@@ -83,7 +83,7 @@ $isAdmin = in_array($username, $adminUsers);
         <h3 class="subjudul">Novigrad</h3>
         <div class="content">
             <div class="img">
-                <img src="../assets/Chapter2/pic 0.svg" alt="Prologue Scene">
+                <img src="assets/Chapter2/pic 0.svg" alt="Prologue Scene">
             </div>
             <div class="text">
                 <p class="para1">In the city of Novigrad, the influence of the Church of the Eternal Fire grows, leading to the persecution of anyone deemed "other," such as non-humans, mages, and witchers. Geralt navigates this hostile environment while searching for clues about Ciri and his old friend, Triss Merigold, who is in hiding and struggling to make ends meet. After helping Triss out of a difficult situation, she directs Geralt to Corinne Tilly, a dream seer, who reveals that Ciri had been in contact with Dandelion.</p>
@@ -93,7 +93,7 @@ $isAdmin = in_array($username, $adminUsers);
     </section>
     <div class="compass-left"></div>
     <section class="events-section">
-        <img class="dots3" src="../assets/Chapter2/3 dot.svg">
+        <img class="dots3" src="assets/Chapter2/3 dot.svg">
         <div class="events">
             <div class="event">
                 <h3>Dudu's Help and Dandelion's Release</h3>
@@ -111,22 +111,22 @@ $isAdmin = in_array($username, $adminUsers);
     </section>
     <div class="compass-right"></div>
     <section class="scene">
-        <img class="line" src="../assets/Chapter2/line.svg">
+        <img class="line" src="assets/Chapter2/line.svg">
         <div class="gallery">
             <div class="card">
-                <img src="../assets/Chapter2/pic 1.svg" alt="Geralt of Rivia killed the griffin" />
+                <img src="assets/Chapter2/pic 1.svg" alt="Geralt of Rivia killed the griffin" />
                 <p>Dandelion talking with Geralt of Rivian</p>
             </div>
             <div class="card">
-                <img src="../assets/Chapter2/pic 2.svg" alt="Yennefer manage to escape from the Wild Hunt" />
+                <img src="assets/Chapter2/pic 2.svg" alt="Yennefer manage to escape from the Wild Hunt" />
                 <p>Vernon Roche and Geralt of Rivia</p>
             </div>
             <div class="card">
-                <img src="../assets/Chapter2/pic 3.svg" alt="First look of Ciri's teenage version" />
+                <img src="assets/Chapter2/pic 3.svg" alt="First look of Ciri's teenage version" />
                 <p>Ciri talking with Dudu</p>
             </div>
         </div>
-        <img class="line-re" src="../assets/Prologue/line.svg">
+        <img class="line-re" src="assets/Prologue/line.svg">
     </section>
     <section class="choices">
         <h2>Choose Phase</h2>
@@ -134,7 +134,7 @@ $isAdmin = in_array($username, $adminUsers);
             <div class="choice">
                 <p class="left">“Kill him, Roche. I don't want any trouble”</p>
                 <video controls>
-                    <source src="../assets/Chapter2/kill roche.mp4" type="video/webm" />
+                    <source src="assets/Chapter2/kill roche.mp4" type="video/webm" />
                     Browsermu tidak mendukung tag ini, upgrade donk!
                 </video>
                 <p class="left btm">If Geralt sides with Roche and chooses to kill Nilfgaardian soldiers, this can strengthen their bond, as Roche shares Geralt's hostility toward Nilfgaard. This decision is influenced by Roche's personal vendetta against Nilfgaardians, given the destruction of his homeland, Temeria.</p>
@@ -143,7 +143,7 @@ $isAdmin = in_array($username, $adminUsers);
             <div class="choice">
                 <p class="right">“Hard to argue with that”</p>
                 <video controls>
-                    <source src="../assets/Chapter2/hard to argue.mp4" type="video/webm" />
+                    <source src="assets/Chapter2/hard to argue.mp4" type="video/webm" />
                     Browsermu tidak mendukung tag ini, upgrade donk!
                 </video>
                 <p class="right btm">Alternatively, Geralt can decide to show mercy and spare the Nilfgaardian soldiers. This decision often creates tension between Geralt and Roche, as it signals a more diplomatic or pragmatic stance that contrasts with Roche's more vengeful attitude.</p>

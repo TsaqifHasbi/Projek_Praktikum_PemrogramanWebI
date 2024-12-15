@@ -49,16 +49,16 @@ $isAdmin = in_array($username, $adminUsers);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Witcher: Chapter III</title>
     <link rel="stylesheet" href="Skellige.css">
-    <link rel="shotcut icon" href="../assets/Sign Up/Logo.svg">
+    <link rel="shotcut icon" href="assets/Sign Up/Logo.svg">
 </head>
 <body>
     <header>
         <div class="header-content">
             <a href="Skellige.php">
-                <img src="../assets/Prologue/Logo.svg" alt="The Witcher Logo" class="logo">
+                <img src="assets/Prologue/Logo.svg" alt="The Witcher Logo" class="logo">
             </a>
             <button class="profile" onclick="window.location.href='<?= $isAdmin ? 'settingAdmin.php' : 'settingUser.php' ?>'">
-            <img class="region" src="../assets/Choose Region/<?= htmlspecialchars($region) ?>.svg" alt="">
+            <img class="region" src="assets/Choose Region/<?= htmlspecialchars($region) ?>.svg" alt="">
                 <div class="welcome">
                     <p>Welcome,</p> 
                     <p class="user"><?php echo htmlspecialchars($username); ?></p>
@@ -69,7 +69,7 @@ $isAdmin = in_array($username, $adminUsers);
 
     <section id="quote-section">
         <div class="quote-sect">
-            <img src="../assets/Chapter3/Yennefer.svg" alt="Vesemir" class="icon">
+            <img src="assets/Chapter3/Yennefer.svg" alt="Vesemir" class="icon">
             <div class="quote">
                 <p class="qt">"You think these Skelligers are stubborn? You should meet their storms."</p>
                 <span class="qt-who">- YENNEFER</span>
@@ -83,7 +83,7 @@ $isAdmin = in_array($username, $adminUsers);
         <h3 class="subjudul">Yennefer</h3>
         <div class="content">
             <div class="img">
-                <img src="../assets/Chapter3/pic 0.svg" alt="Prologue Scene">
+                <img src="assets/Chapter3/pic 0.svg" alt="Prologue Scene">
             </div>
             <div class="text">
                 <p class="para1">Geralt arrives in the Isles of Skellige after surviving a shipwreck caused by raiders and reaches Kaer Trolde during King Bran Tuirseach's funeral. At the wake, he reunites with Yennefer and Crach an Craite, who leads the an Craite clan. Yennefer enlists Geralt's help to steal a magical mask from the druid's laboratory, an artifact that reveals visions of the past. Using it, they learn Ciri was pursued by the Wild Hunt and that the village of Lofoten was recently attacked.</p>
@@ -93,7 +93,7 @@ $isAdmin = in_array($username, $adminUsers);
     </section>
     <div class="compass-left"></div>
     <section class="events-section">
-        <img class="dots3" src="../assets/Chapter3/3 dot.svg">
+        <img class="dots3" src="assets/Chapter3/3 dot.svg">
         <div class="events">
             <div class="event">
                 <h3>Skjall's Story and Ciri's Escape</h3>
@@ -111,22 +111,22 @@ $isAdmin = in_array($username, $adminUsers);
     </section>
     <div class="compass-right"></div>
     <section class="scene">
-        <img class="line" src="../assets/Chapter3/line.svg">
+        <img class="line" src="assets/Chapter3/line.svg">
         <div class="gallery">
             <div class="card">
-                <img src="../assets/Chapter3/pic 1.svg" alt="Geralt of Rivia killed the griffin" />
+                <img src="assets/Chapter3/pic 1.svg" alt="Geralt of Rivia killed the griffin" />
                 <p>The Mysterious Elf helped Ciri evade the Wild Hunt</p>
             </div>
             <div class="card">
-                <img src="../assets/Chapter3/pic 2.svg" alt="Yennefer manage to escape from the Wild Hunt" />
+                <img src="assets/Chapter3/pic 2.svg" alt="Yennefer manage to escape from the Wild Hunt" />
                 <p>Uma (Ugliest Man Alive)</p>
             </div>
             <div class="card">
-                <img src="../assets/Chapter3/pic 3.svg" alt="First look of Ciri's teenage version" />
+                <img src="assets/Chapter3/pic 3.svg" alt="First look of Ciri's teenage version" />
                 <p>Ciri and Skjall</p>
             </div>
         </div>
-        <img class="line-re" src="../assets/Chapter3/line.svg">
+        <img class="line-re" src="assets/Chapter3/line.svg">
     </section>
     <section class="choices">
         <h2>Choose Phase</h2>
@@ -134,7 +134,7 @@ $isAdmin = in_array($username, $adminUsers);
             <div class="choice">
                 <p class="left">“I'll help you, Cerys.”</p>
                 <video controls>
-                    <source src="../assets/Chapter3/help cerys.mp4" type="video/webm" />
+                    <source src="assets/Chapter3/help cerys.mp4" type="video/webm" />
                     Browsermu tidak mendukung tag ini, upgrade donk!
                 </video>
                 <p class="left btm">The true culprit behind the attacks is revealed and Cerys will be crowned Queen of Skellige. She will then forgo raiding other countries to focus on the Isles, making them prosper under her leadership.</p>
@@ -143,7 +143,7 @@ $isAdmin = in_array($username, $adminUsers);
             <div class="choice">
                 <p class="right">“Going with Hjalmar”</p>
                 <video controls>
-                    <source src="../assets/Chapter3/follow hjalmar.mp4" type="video/webm" />
+                    <source src="assets/Chapter3/follow hjalmar.mp4" type="video/webm" />
                     Browsermu tidak mendukung tag ini, upgrade donk!
                 </video>
                 <p class="right btm">The true culprit behind the attack is never revealed but by shedding the blood of the remaining berserkers he clears the family name and is crowned King of Skellige. He will then increase raids against Nilfgaard, even at the cost of his people's lives.</p>

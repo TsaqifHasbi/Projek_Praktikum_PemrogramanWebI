@@ -63,34 +63,34 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choose Region - The Witcher</title>
     <link rel="stylesheet" href="ChooseRegion.css">
-    <link rel="shotcut icon" href="../assets/Sign Up/Logo.svg">
+    <link rel="shotcut icon" href="assets/Sign Up/Logo.svg">
 </head>
 <body>
     <div class="background">
-        <img src="../assets/Choose Region/Background.png" alt="The Witcher Background" class="bg-image">
+        <img src="assets/Choose Region/Background.png" alt="The Witcher Background" class="bg-image">
     </div>
     <div class="region-container">
         <h1 class="region-title">WHERE ARE YOU FROM, <span>WITCHER?</span></h1>
         <form method="POST" id="regionForm">
             <div class="region-grid">
                 <div class="region-card" onclick="selectRegion('Vizima',event)">
-                    <img src="../assets/Choose Region/Vizima.svg" alt="Vizima">
+                    <img src="assets/Choose Region/Vizima.svg" alt="Vizima">
                     <p>Vizima</p>
                 </div>
                 <div class="region-card" onclick="selectRegion('Velen',event)">
-                    <img src="../assets/Choose Region/Velen.svg" alt="Velen">
+                    <img src="assets/Choose Region/Velen.svg" alt="Velen">
                     <p>Velen</p>
                 </div>
                 <div class="region-card" onclick="selectRegion('Novigrad',event)">
-                    <img src="../assets/Choose Region/Novigrad.svg" alt="Novigrad">
+                    <img src="assets/Choose Region/Novigrad.svg" alt="Novigrad">
                     <p>Novigrad</p>
                 </div>
                 <div class="region-card" onclick="selectRegion('Skellige', event)">
-                    <img src="../assets/Choose Region/Skellige.svg" alt="Skellige">
+                    <img src="assets/Choose Region/Skellige.svg" alt="Skellige">
                     <p>Skellige</p>
                 </div>
                 <div class="region-card" onclick="selectRegion('Kaer Morhen', event)">
-                    <img src="../assets/Choose Region/Kaer Morhen.svg" alt="Kaer Morhen">
+                    <img src="assets/Choose Region/Kaer Morhen.svg" alt="Kaer Morhen">
                     <p>Kaer Morhen</p>
                 </div>
             </div>

@@ -63,16 +63,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['current_username'])) 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Settings - User Admin</title>
     <link rel="stylesheet" href="settingAdmin.css">
-    <link rel="shortcut icon" href="../assets/Sign Up/Logo.svg">
+    <link rel="shortcut icon" href="assets/Sign Up/Logo.svg">
 </head>
 <body>
     <header>
         <div class="header-content">
             <a href="<?= htmlspecialchars(str_replace(' ', '', $_SESSION['region'])) ?>.php">
-                <img src="../assets/Sign In/Logo.svg" alt="The Witcher Logo" class="logo">
+                <img src="assets/Sign In/Logo.svg" alt="The Witcher Logo" class="logo">
             </a>
             <button class="profile <?= strtolower(str_replace(' ', '-', htmlspecialchars($_SESSION['region']))) ?>">
-                <img class="region" src="../assets/Choose Region/<?= htmlspecialchars($_SESSION['region']) ?>.svg" alt="">
+                <img class="region" src="assets/Choose Region/<?= htmlspecialchars($_SESSION['region']) ?>.svg" alt="">
                 <div class="welcome">
                     <p>Welcome,</p>
                     <p class="user"><?= htmlspecialchars($_SESSION['username']) ?></p>

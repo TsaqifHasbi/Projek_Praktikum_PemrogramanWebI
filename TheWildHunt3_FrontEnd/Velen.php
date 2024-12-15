@@ -49,16 +49,16 @@ $isAdmin = in_array($username, $adminUsers);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Witcher: Chapter I</title>
     <link rel="stylesheet" href="Velen.css">
-    <link rel="shotcut icon" href="../assets/Sign Up/Logo.svg">
+    <link rel="shotcut icon" href="assets/Sign Up/Logo.svg">
 </head>
 <body>
     <header>
         <div class="header-content">
             <a href="Velen.php">
-                <img src="../assets/Prologue/Logo.svg" alt="The Witcher Logo" class="logo">
+                <img src="assets/Prologue/Logo.svg" alt="The Witcher Logo" class="logo">
             </a>
             <button class="profile" onclick="window.location.href='<?= $isAdmin ? 'settingAdmin.php' : 'settingUser.php' ?>'">
-            <img class="region" src="../assets/Choose Region/<?= htmlspecialchars($region) ?>.svg" alt="">
+            <img class="region" src="assets/Choose Region/<?= htmlspecialchars($region) ?>.svg" alt="">
                 <div class="welcome">
                     <p>Welcome,</p> 
                     <p class="user"><?php echo htmlspecialchars($username); ?></p>
@@ -68,7 +68,7 @@ $isAdmin = in_array($username, $adminUsers);
     </header>
     <section id="quote-section">
         <div class="quote-sect">
-            <img src="../assets/Chapter1/The Bloody Baron.svg" alt="Velen" class="icon">
+            <img src="assets/Chapter1/The Bloody Baron.svg" alt="Velen" class="icon">
             <div class="quote">
                 <p class="qt">"We all got to die someday. Sooner or later. Makes no difference when, but as long as it happens with dignity."</p>
                 <span class="qt-who">- The Bloody Baron</span>
@@ -80,7 +80,7 @@ $isAdmin = in_array($username, $adminUsers);
         <h1 class="judul">Chapter I</h1> 
         <h3 class="subjudul">Velen</h3>
         <div class="content">
-            <img src="../assets/Chapter1/pic 0.svg" alt="Prologue Scene">
+            <img src="assets/Chapter1/pic 0.svg" alt="Prologue Scene">
             <div class="text">
                 <p class="para1">Geralt travels to Velen, a war-torn land known as No Man's Land, in search of clues about Ciri's whereabouts. The region has been devastated by the ongoing conflict between the Nilfgaardian Empire and the Northern Kingdoms, leaving it desolate and dangerous. Acting on Emperor Emhyr's orders, Geralt tracks down his spy, Hendrik, who is stationed in the village of Heatherton.</p>
                 <p class="para2">When Geralt arrives, he finds Heatherton in ruins, with signs of a supernatural attack that go beyond the destruction caused by war. Hendrik is discovered dead, but Geralt manages to uncover two important leads about Ciri from the spy's notes, setting him on the next steps of his journey. The events in Heatherton reveal the lurking presence of darker forces that threaten the already dire state of Velen.</p>
@@ -89,7 +89,7 @@ $isAdmin = in_array($username, $adminUsers);
     </section>
     <div class="compass-left"></div>
     <section class="events-section">
-        <img class="dots3" src="../assets/Prologue/3 dot.svg">
+        <img class="dots3" src="assets/Prologue/3 dot.svg">
         <div class="events">
             <div class="event">
                 <h3>Clues from the Witch and the Elven Mage</h3>
@@ -107,22 +107,22 @@ $isAdmin = in_array($username, $adminUsers);
     </section>
     <div class="compass-right"></div>
     <section class="scene">
-        <img class="line" src="../assets/Prologue/line.svg">
+        <img class="line" src="assets/Prologue/line.svg">
         <div class="gallery">
             <div class="card">
-                <img src="../assets/Chapter1/pic 1.svg" alt="Geralt of Rivia killed the griffin" />
+                <img src="assets/Chapter1/pic 1.svg" alt="Geralt of Rivia killed the griffin" />
                 <p>Geralt of Rivia with Keira Metz</p>
             </div>
             <div class="card">
-                <img src="../assets/Chapter1/pic 2.svg" alt="Yennefer manage to escape from the Wild Hunt" />
+                <img src="assets/Chapter1/pic 2.svg" alt="Yennefer manage to escape from the Wild Hunt" />
                 <p>The Bloody Baron holding his child</p>
             </div>
             <div class="card">
-                <img src="../assets/Chapter1/pic 3.svg" alt="First look of Ciri's teenage version" />
+                <img src="assets/Chapter1/pic 3.svg" alt="First look of Ciri's teenage version" />
                 <p>Ciri against her enemies</p>
             </div>
         </div>
-        <img class="line-re" src="../assets/Chapter1/line.svg">
+        <img class="line-re" src="assets/Chapter1/line.svg">
     </section>
     <section class="choices">
         <h2>Choose Phase</h2>
@@ -130,7 +130,7 @@ $isAdmin = in_array($username, $adminUsers);
             <div class="choice">
                 <p class="left">“Go to Kaer Morhen”</p>
                 <video controls>
-                    <source src="../assets/Chapter1/kaer morhen.mp4" type="video/webm" />
+                    <source src="assets/Chapter1/kaer morhen.mp4" type="video/webm" />
                 </video>
                 <p class="left btm">At Kaer Morhen, Keira saves Lambert from being killed in The Battle of Kaer Morhen quest. It is worth noting that taking the notes from Keira after making the choice to send her to Kaer Morhen, is of no consequence. Also, it is still possible to save Lambert during the battle even if Keira is not present, though Keira's presence guarantees Lambert's survival.</p>
             </div>
@@ -138,7 +138,7 @@ $isAdmin = in_array($username, $adminUsers);
             <div class="choice">
                 <p class="right">"Farewell"</p>
                 <video controls>
-                    <source src="../assets/Chapter1/farewell.mp4" type="video/webm" />
+                    <source src="assets/Chapter1/farewell.mp4" type="video/webm" />
                 </video>
                 <p class="right btm">Later, Geralt finds out from Triss that Radovid ordered Keira to be captured and then impaled. This triggers the quest A Final Kindness which is otherwise unavailable.</p>
             </div>
