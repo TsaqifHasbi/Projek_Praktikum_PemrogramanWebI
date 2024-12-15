@@ -69,9 +69,12 @@ body {
     justify-content: center;
 }
 .logo {
-    height: 100px;
+    max-width: 200px;
+    width: 100%;
+    height: auto;
     margin: 0 0 0 40px;
 }
+
 
 .profile {
     font-size: 14px;
@@ -170,13 +173,12 @@ body {
 
 .prologue .content {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
     background-color: #A8BBA8;
-    height: 700px;
-    padding: 0 90px;
     color: #1A3C2A;
+    gap: 20px;
+    padding: 80px 120px;
 }
 
 .prologue .text {
@@ -188,7 +190,7 @@ body {
     text-align: justify;
 }
 
-.prologue .img {
+.prologue img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -196,7 +198,10 @@ body {
     max-height: 690px;
     border-radius: 10px;
 }
-
+.prologue, .events {
+    position: relative; 
+    z-index: 1;
+}
 .compass-left::before {
     content: url('../assets/Chapter2/Compass.svg');
     position: absolute;
@@ -274,9 +279,15 @@ body {
     margin: 0;
     max-width: 310px; 
 }
-  
-
-.dots3re{
+.line{
+    width: 68%;
+    padding: 80px 0 10px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line-re{
     width: 68%;
     padding: 80px 0 10px 0;
     margin: 0 auto;
@@ -435,7 +446,7 @@ footer .backtop:hover {
 }
 @media (max-width: 1024px) {
     header .header-content .logo{
-        width: 25%;
+        width: 50%;
     }
     header .header-content .profile{
         width: 30%;

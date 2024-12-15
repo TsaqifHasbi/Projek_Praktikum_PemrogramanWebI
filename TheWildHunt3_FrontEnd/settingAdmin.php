@@ -95,8 +95,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['current_username'])) 
                 <?php elseif ($success): ?>
                     <div class="success-message">User data updated successfully!</div>
                 <?php endif; ?>
-                
-                <!-- Form untuk mengedit data user -->
                 <form method="POST">
                     <input type="hidden" name="current_username" value="<?= htmlspecialchars($current_username) ?>">
                     <table>
@@ -129,7 +127,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['current_username'])) 
                         <tr class="form-buttons">
                             <td></td>
                             <td><button type="submit" class="save">Edit User</button></td>
-                            <td><a href="LandingPage.php" class="save">Log Out</a></td>
                         </tr>
                     </table>
                 </form>

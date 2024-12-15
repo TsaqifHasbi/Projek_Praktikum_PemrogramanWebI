@@ -134,7 +134,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <tr class="form-buttons">
                             <td></td>
                             <td><button type="submit" class="save">Save</button></td>
-                            <td><a href="LogOut.php" class="save">Log Out</a></td>
                         </tr>
                     </table>
                 </form>

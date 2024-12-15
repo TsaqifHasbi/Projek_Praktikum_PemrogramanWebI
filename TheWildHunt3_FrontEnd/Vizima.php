@@ -56,7 +56,7 @@ $isAdmin = in_array($username, $adminUsers);
     <header>
         <div class="header-content">
             <a href="Vizima.php">
-                <img src="../assets/Sign In/Logo.svg" alt="The Witcher Logo" class="logo">
+                <img src="../assets/Prologue/Logo.svg" alt="The Witcher Logo" class="logo">
             </a>
             <button class="profile" onclick="window.location.href='<?= $isAdmin ? 'settingAdmin.php' : 'settingUser.php' ?>'">
             <img class="region" src="../assets/Choose Region/<?= htmlspecialchars($region) ?>.svg" alt="">
@@ -108,7 +108,7 @@ $isAdmin = in_array($username, $adminUsers);
     </section>
     <div class="compass-right"></div>
     <section class="scene">
-        <img class="dots3" src="../assets/Prologue/line.svg">
+        <img class="line" src="../assets/Prologue/line.svg">
         <div class="gallery">
             <div class="card">
                 <img src="../assets/Prologue/pic 1.svg" alt="Geralt of Rivia killed the griffin" />
@@ -123,7 +123,7 @@ $isAdmin = in_array($username, $adminUsers);
                 <p>First look of Ciri's teenage version</p>
             </div>
         </div>
-        <img class="dots3re" src="../assets/Prologue/line.svg">
+        <img class="line-re" src="../assets/Prologue/line.svg">
     </section>
     <section class="choices">
         <h2>Choose Phase</h2>
