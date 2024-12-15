@@ -129,7 +129,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['current_username'])) 
                             <td>
                                 <div class="button-container">
                                     <button type="submit" class="save">Edit User</button>
-                                    <button type="submit" class="save" href="LogOut.php">Sign Out</button>
+                                    <button type="button" class="save" onclick="window.location.href='LogOut.php';">Sign Out</button>
                                 </div>
                             </td>
                         </tr>
