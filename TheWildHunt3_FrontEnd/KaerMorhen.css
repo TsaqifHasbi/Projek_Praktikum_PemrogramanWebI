@@ -461,10 +461,10 @@ footer .backtop:hover {
     }
     #quote-section{
         display: flex;
-        /* padding: 80px 80px; */
     }
     .quote-sect{
         flex-direction: column;
+        padding: 0 60px
     }
     .choices-box{
         gap: 0;

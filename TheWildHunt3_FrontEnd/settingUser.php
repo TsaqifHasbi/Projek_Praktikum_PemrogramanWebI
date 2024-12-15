@@ -133,7 +133,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </tr>
                         <tr class="form-buttons">
                             <td></td>
-                            <td><button type="submit" class="save">Save</button></td>
+                            <td>
+                                <div class="button-container">
+                                    <button type="submit" class="save">Edit User</button>
+                                    <button type="submit" class="save">Sign Out</button>
+                                </div>
+                            </td>
                         </tr>
                     </table>
                 </form>

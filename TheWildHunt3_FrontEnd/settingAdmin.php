@@ -126,7 +126,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['current_username'])) 
 
                         <tr class="form-buttons">
                             <td></td>
-                            <td><button type="submit" class="save">Edit User</button></td>
+                            <td>
+                                <div class="button-container">
+                                    <button type="submit" class="save">Edit User</button>
+                                    <button type="submit" class="save">Sign Out</button>
+                                </div>
+                            </td>
                         </tr>
                     </table>
                 </form>

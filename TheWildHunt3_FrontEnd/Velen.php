@@ -67,11 +67,13 @@ $isAdmin = in_array($username, $adminUsers);
         </div>
     </header>
     <section id="quote-section">
-        <img src="../assets/Chapter1/The Bloody Baron.svg" alt="Velen" class="icon">
-        <div class="quote">
-            <p class="qt">"We all got to die someday. Sooner or later. Makes no difference when, but as long as it happens with dignity."</p>
-            <span class="qt-who">- The Bloody Baron</span>
-            <p class="quote-desc">This quote reflects his hardened perspective shaped by war and personal failures. It underscores his fatalistic yet honor-driven mindset as he seeks redemption for his past mistakes. This idea aligns with the Baron's role in Velen, the line also hints at the themes of mortality and accountability that run through his story, especially regarding his interactions with his family.</p>
+        <div class="quote-sect">
+            <img src="../assets/Chapter1/The Bloody Baron.svg" alt="Velen" class="icon">
+            <div class="quote">
+                <p class="qt">"We all got to die someday. Sooner or later. Makes no difference when, but as long as it happens with dignity."</p>
+                <span class="qt-who">- The Bloody Baron</span>
+                <p class="quote-desc">This quote reflects his hardened perspective shaped by war and personal failures. It underscores his fatalistic yet honor-driven mindset as he seeks redemption for his past mistakes. This idea aligns with the Baron's role in Velen, the line also hints at the themes of mortality and accountability that run through his story, especially regarding his interactions with his family.</p>
+            </div>
         </div>
     </section>
     <section class="prologue">

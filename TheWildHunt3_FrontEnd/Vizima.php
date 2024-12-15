@@ -69,11 +69,13 @@ $isAdmin = in_array($username, $adminUsers);
     </header>
 
     <section id="quote-section">
-        <img src="../assets/Prologue/Vesemir.svg" alt="Vesemir" class="icon">
-        <div class="quote">
-            <p class="qt">"IF YOU WANT TO REST, COME WITH ME. OR GO AHEAD AND HELP. JUST DON'T MAKE A MESS."</p>
-            <span class="qt-who">- Vesemir</span>
-            <p class="quote-desc">This quote appears when Vesemir gives Geralt the freedom to act in White Orchard, reflecting the wise and pragmatic nature of a Witcher mentor. Vesemir often reminds Geralt to avoid over-involvement but to act responsibly.</p>
+        <div class="quote-sect">
+            <img src="../assets/Prologue/Vesemir.svg" alt="Vesemir" class="icon">
+            <div class="quote">
+                <p class="qt">"IF YOU WANT TO REST, COME WITH ME. OR GO AHEAD AND HELP. JUST DON'T MAKE A MESS."</p>
+                <span class="qt-who">- Vesemir</span>
+                <p class="quote-desc">This quote appears when Vesemir gives Geralt the freedom to act in White Orchard, reflecting the wise and pragmatic nature of a Witcher mentor. Vesemir often reminds Geralt to avoid over-involvement but to act responsibly.</p>
+            </div>
         </div>
     </section>
 
