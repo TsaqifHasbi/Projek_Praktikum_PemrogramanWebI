@@ -81,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <header>
         <div class="header-content">
-            <a href="<?= htmlspecialchars($_SESSION['region']) ?>.php">
+            <a href="<?= htmlspecialchars(str_replace(' ', '', $_SESSION['region'])) ?>.php">
                 <img src="../assets/Sign In/Logo.svg" alt="The Witcher Logo" class="logo">
             </a>
             <button class="profile">
