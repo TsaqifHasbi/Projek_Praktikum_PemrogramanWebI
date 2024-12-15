@@ -477,7 +477,16 @@ footer .backtop:hover {
     .quote .qt, .quote span{
         font-size: 24px;
     }
+    .quote{
+        text-align: center;
+    }
     .quote .quote-desc{
+        font-size: 16px;
+    }
+    .prologue .judul, .prologue .subjudul{
+        font-size: 28px;
+    }
+    .prologue .text{
         font-size: 16px;
     }
 }
