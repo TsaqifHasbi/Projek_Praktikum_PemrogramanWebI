@@ -53,11 +53,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In - The Witcher</title>
     <link rel="stylesheet" href="Sign-in.css">
+<<<<<<< HEAD
     <link rel="shortcut icon" href="assets/Sign Up/Logo.svg">
+=======
+    <link rel="shotcut icon" href="assets/Sign In/Logo.svg">
+>>>>>>> 56ed5ff404ae9ba4c06c97c3eee17f7a9c56a843
 </head>
 <body>
     <div class="background">
-        <img src="assets/Sign Up/Background.png" alt="The Witcher Background" class="bg-image">
+        <img src="assets/Sign In/Background.png" alt="The Witcher Background" class="bg-image">
     </div>
     <div class="form-container">
         <div class="form-content">
