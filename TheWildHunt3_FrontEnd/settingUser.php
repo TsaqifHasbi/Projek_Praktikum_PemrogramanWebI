@@ -136,7 +136,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <td>
                                 <div class="button-container">
                                     <button type="submit" class="save">Edit User</button>
-                                    <button type="submit" class="save" href="index.php">Sign Out</button>
+                                    <button type="submit" class="save" href="LogOut.php">Sign Out</button>
                                 </div>
                             </td>
                         </tr>
