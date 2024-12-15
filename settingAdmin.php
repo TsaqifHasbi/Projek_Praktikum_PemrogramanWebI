@@ -1,12 +1,11 @@
 <?php
 session_start();
 
-
 $allowed_users = ['AdminDeef', 'AdminPaun', 'AdminQif'];
 if (!isset($_SESSION['username']) || !in_array($_SESSION['username'], $allowed_users)) {
 }
 
-$$config = include 'TheWildHunt3_Backend/ConnectionDatabase/Config.php';
+$config = include 'TheWildHunt3_Backend/ConnectionDatabase/Config.php';
 $conn = new mysqli($config['host'], $config['username'], $config['password'], $config['database']);
 
 // Cek koneksi

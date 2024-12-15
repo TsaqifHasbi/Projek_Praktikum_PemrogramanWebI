@@ -8,6 +8,7 @@ if (!isset($_SESSION['username'])) {
 
 $username = $_SESSION['username'];
 
+// Koneksi ke database
 $config = include 'TheWildHunt3_Backend/ConnectionDatabase/Config.php';
 $conn = new mysqli(
     $config['host'],
@@ -21,18 +22,22 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Ambil region pengguna
+// Ambil region pengguna menggunakan bind_result()
 $sql = "SELECT region FROM login_witcher WHERE username = ?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("s", $username);
 $stmt->execute();
-$result = $stmt->get_result();
-if ($result->num_rows > 0) {
-    $row = $result->fetch_assoc();
-    $region = $row['region'];
+
+// Variabel untuk menyimpan hasil
+$stmt->bind_result($region);
+
+// Jika ada hasil, ambil region
+if ($stmt->fetch()) {
+    $region = htmlspecialchars($region);  // Menangani XSS
 } else {
     $region = 'default_region'; // Nilai default jika region tidak ditemukan
 }
+
 $stmt->close();
 
 // Daftar username admin

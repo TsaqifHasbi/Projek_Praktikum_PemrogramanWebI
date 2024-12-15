@@ -27,12 +27,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt = $conn->prepare("SELECT region FROM login_witcher WHERE username = ? AND password = ?");
         $stmt->bind_param("ss", $username, $password);
         $stmt->execute();
-        $result = $stmt->get_result();
 
-        if ($result->num_rows === 1) {
-            $row = $result->fetch_assoc();
-            $region = $row['region'];
+        // Menggunakan bind_result untuk memetakan hasil query ke variabel
+        $stmt->bind_result($region);
 
+        // Mengecek apakah ada hasil
+        if ($stmt->fetch()) {
             $_SESSION['username'] = $username;
             $_SESSION['region'] = $region; 
 
@@ -41,6 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         } else {
             $error = "The Wild Hunt Has not Heard of You. Make sure your name and password are correct!";
         }
+        $stmt->close();
     }
 }
 ?>
@@ -52,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In - The Witcher</title>
     <link rel="stylesheet" href="Sign-in.css">
-    <link rel="shotcut icon" href="assets/Sign Up/Logo.svg">
+    <link rel="shortcut icon" href="assets/Sign Up/Logo.svg">
 </head>
 <body>
     <div class="background">
@@ -60,8 +61,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
     <div class="form-container">
         <div class="form-content">
-            <img class="logo" src="assets/Sign In/Logo.svg" alt="">
-            <form id="signinForm" method="POST">
+            <img class="logo" src="assets/Sign In/Logo.svg" alt="The Witcher Logo">
+            <form id="signinForm" method="POST" action="Sign-in.php">
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" placeholder="Username" required>
 
