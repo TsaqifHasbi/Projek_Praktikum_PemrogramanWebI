@@ -70,7 +70,9 @@ body {
     justify-content: center;
 }
 .logo {
-    height: 100px;
+    max-width: 200px;
+    width: 100%;
+    height: auto;
     margin: 0 0 0 40px;
 }
 
@@ -91,7 +93,7 @@ body {
 }
 
 .profile:hover{
-    background-color: #4A593D;
+    background-color: #C96D6D;
 }
 
 .profile .region{
@@ -280,7 +282,15 @@ body {
 }
   
 
-.dots3re{
+.line{
+    width: 68%;
+    padding: 80px 0 10px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line-re{
     width: 68%;
     padding: 80px 0 10px 0;
     margin: 0 auto;
@@ -457,6 +467,12 @@ footer .backtop:hover {
     }
     .prologue img, .choice video{
         width: 100%;
+    }
+    .quote .qt, .quote span{
+        font-size: 24px;
+    }
+    .quote .quote-desc{
+        font-size: 16px;
     }
 }
 @media (max-width: 768px) {

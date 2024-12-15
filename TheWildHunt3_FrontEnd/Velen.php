@@ -105,7 +105,7 @@ $isAdmin = in_array($username, $adminUsers);
     </section>
     <div class="compass-right"></div>
     <section class="scene">
-        <img class="dots3" src="../assets/Prologue/line.svg">
+        <img class="line" src="../assets/Prologue/line.svg">
         <div class="gallery">
             <div class="card">
                 <img src="../assets/Chapter1/pic 1.svg" alt="Geralt of Rivia killed the griffin" />
@@ -120,7 +120,7 @@ $isAdmin = in_array($username, $adminUsers);
                 <p>Ciri against her enemies</p>
             </div>
         </div>
-        <img class="dots3re" src="../assets/Chapter1/line.svg">
+        <img class="line-re" src="../assets/Chapter1/line.svg">
     </section>
     <section class="choices">
         <h2>Choose Phase</h2>

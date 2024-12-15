@@ -93,7 +93,7 @@ body {
 }
 
 .profile:hover{
-    background-color: #4A593D;
+    background-color: #5A6D87;
 }
 
 .profile .region{
@@ -457,7 +457,7 @@ footer .backtop:hover {
 }
 @media (max-width: 1024px) {
     header .header-content .logo{
-        width: 25%;
+        width: 50%;
     }
     header .header-content .profile{
         width: 30%;
@@ -476,6 +476,12 @@ footer .backtop:hover {
     }
     .prologue img, .choice video{
         width: 100%;
+    }
+    .quote .qt, .quote span{
+        font-size: 24px;
+    }
+    .quote .quote-desc{
+        font-size: 16px;
     }
 }
 @media (max-width: 768px) {

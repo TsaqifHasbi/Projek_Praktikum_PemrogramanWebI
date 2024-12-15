@@ -89,7 +89,7 @@ $isAdmin = in_array($username, $adminUsers);
             </div>
         </div>
     </section>
-
+    <div class="compass-left"></div>
     <section class="events-section">
         <img class="dots3" src="../assets/Chapter3/3 dot.svg">
         <div class="events">
@@ -107,9 +107,9 @@ $isAdmin = in_array($username, $adminUsers);
             </div>
         </div>
     </section>
-    <div class="bg-compas"></div>
+    <div class="compass-right"></div>
     <section class="scene">
-        <img class="dots3" src="../assets/Chapter3/line.svg">
+        <img class="line" src="../assets/Chapter3/line.svg">
         <div class="gallery">
             <div class="card">
                 <img src="../assets/Chapter3/pic 1.svg" alt="Geralt of Rivia killed the griffin" />
@@ -124,7 +124,7 @@ $isAdmin = in_array($username, $adminUsers);
                 <p>Ciri and Skjall</p>
             </div>
         </div>
-        <img class="dots3re" src="../assets/Chapter3/line.svg">
+        <img class="line-re" src="../assets/Chapter3/line.svg">
     </section>
     <section class="choices">
         <h2>Choose Phase</h2>

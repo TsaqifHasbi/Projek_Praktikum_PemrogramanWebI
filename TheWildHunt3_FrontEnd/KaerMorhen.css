@@ -48,6 +48,7 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
+    overflow-x: hidden;
 }
 
 .header-content {
@@ -69,7 +70,9 @@ body {
     justify-content: center;
 }
 .logo {
-    height: 100px;
+    max-width: 200px;
+    width: 100%;
+    height: auto;
     margin: 0 0 0 40px;
 }
 
@@ -90,15 +93,18 @@ body {
 }
 
 .profile:hover{
-    background-color: #A8A8A8;
+    background-color: #A58E7F;
 }
 
 .profile .region{
     width: 30px;
     margin-right: 20px;
 }
-
-#quote-section {
+#quote-section{
+    display: flex;
+    width: 100%;
+}
+.quote-sect {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,13 +176,12 @@ body {
 
 .prologue .content {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
     background-color: #A58E7F;
-    height: 700px;
-    padding: 0 90px;
     color: #4B3A2F;
+    gap: 20px;
+    padding: 80px 120px;
 }
 
 .prologue .text {
@@ -188,7 +193,7 @@ body {
     text-align: justify;
 }
 
-.prologue .img {
+.prologue img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -196,7 +201,29 @@ body {
     max-height: 690px;
     border-radius: 10px;
 }
+.prologue, .events {
+    position: relative; 
+    z-index: 1;
+}
+.compass-left::before {
+    content: url('../assets/Chapter2/Compass.svg');
+    position: absolute;
+    right: 90%;
+    top: 30%;
+    color: rgba(0, 0, 0, 0.233); 
+    z-index: -10;
+    max-width: 100vh;
+}
 
+.compass-right::before {
+    content: url('../assets/Chapter2/Compass.svg');
+    position: absolute;
+    right: 0%;
+    top: 55%;
+    color: rgba(0, 0, 0, 0.233); 
+    z-index: -10;
+    max-width: 100vh;
+}
 .events {
     display: flex;
     justify-content: space-around;
@@ -256,8 +283,15 @@ body {
     max-width: 310px; 
 }
   
-
-.dots3re{
+.line{
+    width: 68%;
+    padding: 80px 0 10px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line-re{
     width: 68%;
     padding: 80px 0 10px 0;
     margin: 0 auto;
@@ -398,12 +432,76 @@ footer .backtop:hover {
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
-    .quote-section, .prologue .content, .events {
+@media (max-width: 1340px) {
+    .prologue .content, .choices-box{
+        display: flex;
         flex-direction: column;
     }
-
-    .event, .choice {
+    .gallery, .events{
+        flex-wrap: wrap;
+    }
+    .verti-line{
         width: 100%;
+        height: 2px;
+    }
+    .choice .left,.choice .right{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 1024px) {
+    header .header-content .logo{
+        width: 50%;
+    }
+    header .header-content .profile{
+        width: 30%;
+    }
+    .welcome p{
+        font-size: smaller;
+    }
+    #quote-section{
+        display: flex;
+        /* padding: 80px 80px; */
+    }
+    .quote-sect{
+        flex-direction: column;
+    }
+    .choices-box{
+        gap: 0;
+        margin: 0;
+        align-items: center;
+    }
+    .prologue img, .choice video{
+        width: 100%;
+    }
+    .quote .qt, .quote span{
+        font-size: 24px;
+    }
+    .quote .quote-desc{
+        font-size: 16px;
+    }
+}
+@media (max-width: 768px) {
+    body{
+        font-size: xx-small;
+    }
+    .icon{
+        width: 90%
+    }
+    .scene .gallery {
+        flex-wrap: wrap;
+    }
+    .event, .choice {
+        width: 75%;
+    }
+    .events-section{
+        flex-direction: row;
+    }
+    .dots3{
+        display: none;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
     }
 }

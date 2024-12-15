@@ -47,7 +47,7 @@ $isAdmin = in_array($username, $adminUsers);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Witcher: Chapter III</title>
+    <title>The Witcher: Chapter IV</title>
     <link rel="stylesheet" href="KaerMorhen.css">
     <link rel="shotcut icon" href="../assets/Sign Up/Logo.svg">
 </head>
@@ -68,11 +68,13 @@ $isAdmin = in_array($username, $adminUsers);
     </header>
 
     <section id="quote-section">
-        <img src="../assets/Chapter4/Geralt.svg" alt="Vesemir" class="icon">
-        <div class="quote">
-            <p class="qt">"We fight. We survive. And we make sure that monsters like them don't take what's ours."</p>
-            <span class="qt-who">- GERALT OF RIVIA</span>
-            <p class="quote-desc">At this moment, Geralt is rallying his companions, emphasizing the need to fight and protect what's important to them, especially Ciri. Despite the overwhelming threat, Geralt's words reflect his determination and the witchers' resolve to survive and defend their home from the Wild Hunt's destructive force. It's a reminder of their mission to protect what they hold dear, no matter the odds.</p>
+        <div class="quote-sect">
+            <img src="../assets/Chapter4/Geralt.svg" alt="Vesemir" class="icon">
+            <div class="quote">
+                <p class="qt">"We fight. We survive. And we make sure that monsters like them don't take what's ours."</p>
+                <span class="qt-who">- GERALT OF RIVIA</span>
+                <p class="quote-desc">At this moment, Geralt is rallying his companions, emphasizing the need to fight and protect what's important to them, especially Ciri. Despite the overwhelming threat, Geralt's words reflect his determination and the witchers' resolve to survive and defend their home from the Wild Hunt's destructive force. It's a reminder of their mission to protect what they hold dear, no matter the odds.</p>
+            </div>
         </div>
     </section>
 
@@ -89,7 +91,7 @@ $isAdmin = in_array($username, $adminUsers);
             </div>
         </div>
     </section>
-
+    <div class="compass-left"></div>
     <section class="events-section">
         <img class="dots3" src="../assets/Chapter4/3 dot.svg">
         <div class="events">
@@ -107,9 +109,9 @@ $isAdmin = in_array($username, $adminUsers);
             </div>
         </div>
     </section>
-    <div class="bg-compas"></div>
+    <div class="compass-right"></div>
     <section class="scene">
-        <img class="dots3" src="../assets/Chapter4/line.svg">
+        <img class="line" src="../assets/Chapter4/line.svg">
         <div class="gallery">
             <div class="card">
                 <img src="../assets/Chapter4/pic 1.svg" alt="Geralt of Rivia killed the griffin" />
@@ -124,7 +126,7 @@ $isAdmin = in_array($username, $adminUsers);
                 <p>Geralt of Rivia fighting against Eredin Bréacc Glas</p>
             </div>
         </div>
-        <img class="dots3re" src="../assets/Chapter4
+        <img class="line" src="../assets/Chapter4
         /line.svg">
     </section>
     <section class="choices">
