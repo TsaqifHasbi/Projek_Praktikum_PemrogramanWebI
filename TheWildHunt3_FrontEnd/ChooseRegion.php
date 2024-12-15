@@ -7,7 +7,7 @@ if (!isset($_SESSION['signup_data'])) {
 }
 
 $signup_data = $_SESSION['signup_data'];
-$config = include 'ConnectionDatabase/Config.php';
+$config = include 'TheWildHunt3_Backend/ConnectionDatabase/Config.php';
 
 if (!$config) {
     die("Gagal memuat konfigurasi database.");

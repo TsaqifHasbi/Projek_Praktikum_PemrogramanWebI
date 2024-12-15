@@ -6,7 +6,7 @@ if (!isset($_SESSION['username'])) {
     exit();
 }
 
-$config = include 'ConnectionDatabase/Config.php';
+$config = include 'TheWildHunt3_Backend/ConnectionDatabase/Config.php';
 $conn = new mysqli(
     $config['host'],
     $config['username'],
