@@ -68,11 +68,13 @@ $isAdmin = in_array($username, $adminUsers);
     </header>
 
     <section id="quote-section">
-        <img src="../assets/Chapter2/Dandelion.svg" alt="Vesemir" class="icon">
-        <div class="quote">
-            <p class="qt">"Novigrad is a city of opportunities, my friend. If you don't mind risking your neck, that is."</p>
-            <span class="qt-who">- Dandelion</span>
-            <p class="quote-desc">This quote reflects Dandelion's perspective on Novigrad's complex and dangerous nature. As a free city, Novigrad is a melting pot of culture, trade, and power struggles, attracting all manner of people from wealthy merchants to outlaws.</p>
+        <div class="quote-sect">
+            <img src="../assets/Chapter2/Dandelion.svg" alt="Vesemir" class="icon">
+            <div class="quote">
+                <p class="qt">"Novigrad is a city of opportunities, my friend. If you don't mind risking your neck, that is."</p>
+                <span class="qt-who">- Dandelion</span>
+                <p class="quote-desc">This quote reflects Dandelion's perspective on Novigrad's complex and dangerous nature. As a free city, Novigrad is a melting pot of culture, trade, and power struggles, attracting all manner of people from wealthy merchants to outlaws.</p>
+            </div>
         </div>
     </section>
 

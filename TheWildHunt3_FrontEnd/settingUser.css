@@ -54,7 +54,36 @@ body::before {
     height: 100px;
     margin: 0 0 0 40px;
 }
-
+.profile.vizima {
+    background-color: #1A3C2A;
+}
+.profile.velen {
+    background-color: #8B2E2E; 
+}
+.profile.novigrad {
+    background-color: #2E3A55; 
+}
+.profile.skellige {
+    background-color: #1D1D1D;
+}
+.profile.kaer-morhen {
+    background-color: #4B3A2F; 
+}
+.profile.vizima:hover {
+    background-color: #4A593D;
+}
+.profile.velen:hover {
+    background-color: #C96D6D; 
+}
+.profile.novigrad:hover {
+    background-color: #5A6D87; 
+}
+.profile.skellige:hover {
+    background-color: #A8A8A8;
+}
+.profile.kaer-morhen:hover {
+    background-color: #A58E7F; 
+}
 .profile {
     font-size: 14px;
     margin: 0 40px 0 0;
@@ -62,7 +91,6 @@ body::before {
     align-items: center;
     justify-content: center;
     border-radius: 25px;
-    background-color: #1A3C2A;
     color: #fff;
     padding: 8px 25px;
     border: none;
@@ -88,7 +116,7 @@ body::before {
 }
 .container {
     width: 100vh;
-    height: 50vh;
+    height: 60vh;
     margin: 50px auto;
     backdrop-filter: blur(10px);
     border-radius: 12px;
@@ -132,7 +160,7 @@ a{
     display: block;
     margin-bottom: 5px;
     font-family: 'Caudex', Arial, sans-serif;
-    padding: 15px 25px;
+    padding: 20px 25px;
 }
 
 .form-group input {
@@ -168,7 +196,11 @@ a{
     color: white;
     width: 100%;
 }
-
+.button-container  {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 .actions button {
     padding: 5px 10px;
     border: none;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Witcher Wild Hunt</title>
-    <link rel="stylesheet" href="LandingPage.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="shotcut icon" href="../assets/Sign Up/Logo.svg">
 </head>
 <body>
@@ -36,6 +36,6 @@
         </div>
     </div>
 
-    <script src="LandingPage.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

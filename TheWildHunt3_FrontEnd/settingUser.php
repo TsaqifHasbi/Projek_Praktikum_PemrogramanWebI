@@ -84,7 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <a href="<?= htmlspecialchars(str_replace(' ', '', $_SESSION['region'])) ?>.php">
                 <img src="../assets/Sign In/Logo.svg" alt="The Witcher Logo" class="logo">
             </a>
-            <button class="profile">
+            <button class="profile <?= strtolower(str_replace(' ', '-', htmlspecialchars($region))) ?>">
                 <img class="region" src="../assets/Choose Region/<?= htmlspecialchars($region) ?>.svg" alt="">
                 <div class="welcome">
                     <p>Welcome,</p> 
@@ -133,7 +133,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </tr>
                         <tr class="form-buttons">
                             <td></td>
-                            <td><button type="submit" class="save">Save</button></td>
+                            <td>
+                                <div class="button-container">
+                                    <button type="submit" class="save">Edit User</button>
+                                    <button type="submit" class="save" href="index.php">Sign Out</button>
+                                </div>
+                            </td>
                         </tr>
                     </table>
                 </form>

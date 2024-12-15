@@ -101,14 +101,18 @@ body {
     margin-right: 20px;
 }
 
-#quote-section {
+#quote-section{
+    display: flex;
+    width: 100%;
+}
+.quote-sect {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 140px;
+    padding: 0 170px;
     margin: 120px 0;
     background-color: #e9eae3;
-    background-image: url(../assets/Chapter2/bg.svg);
+    background-image: url(../assets/Prologue/bg.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; 
@@ -467,7 +471,10 @@ footer .backtop:hover {
     }
     #quote-section{
         display: flex;
+    }
+    .quote-sect{
         flex-direction: column;
+        padding: 0 60px
     }
     .choices-box{
         gap: 0;
@@ -480,7 +487,16 @@ footer .backtop:hover {
     .quote .qt, .quote span{
         font-size: 24px;
     }
+    .quote{
+        text-align: center;
+    }
     .quote .quote-desc{
+        font-size: 16px;
+    }
+    .prologue .judul, .prologue .subjudul{
+        font-size: 28px;
+    }
+    .prologue .text{
         font-size: 16px;
     }
 }

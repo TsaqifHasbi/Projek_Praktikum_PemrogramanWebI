@@ -68,11 +68,13 @@ $isAdmin = in_array($username, $adminUsers);
     </header>
 
     <section id="quote-section">
-        <img src="../assets/Chapter3/Yennefer.svg" alt="Vesemir" class="icon">
-        <div class="quote">
-            <p class="qt">"You think these Skelligers are stubborn? You should meet their storms."</p>
-            <span class="qt-who">- YENNEFER</span>
-            <p class="quote-desc">This line reflects Yennefer's sharp wit and her ability to see the humor in challenging situations. It could be said during one of her interactions with the Skelligers, perhaps when dealing with their unyielding personalities or traditions. Skelligers are renowned for their resilience and pride, qualities mirrored in the harsh, stormy environment of their islands.</p>
+        <div class="quote-sect">
+            <img src="../assets/Chapter3/Yennefer.svg" alt="Vesemir" class="icon">
+            <div class="quote">
+                <p class="qt">"You think these Skelligers are stubborn? You should meet their storms."</p>
+                <span class="qt-who">- YENNEFER</span>
+                <p class="quote-desc">This line reflects Yennefer's sharp wit and her ability to see the humor in challenging situations. It could be said during one of her interactions with the Skelligers, perhaps when dealing with their unyielding personalities or traditions. Skelligers are renowned for their resilience and pride, qualities mirrored in the harsh, stormy environment of their islands.</p>
+            </div>
         </div>
     </section>
 
