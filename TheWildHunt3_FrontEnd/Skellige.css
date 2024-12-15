@@ -478,6 +478,7 @@ footer .backtop:hover {
     }
     .quote .qt, .quote span{
         font-size: 24px;
+        padding: 0;
     }
     .quote{
         text-align: center;
