@@ -16,11 +16,11 @@
             <img class="logo" src="../assets/First_Page/Logo.svg" alt="">
             <p class="subtitle">ONE OF THE MOST ACCLAIMED RPG OF ALL TIME</p>
             <div class="buttons">
-                <form id="signupForm" action="LandingPage.php" method="POST">
+                <form id="signupForm" action="Sign-up.php" method="POST">
                     <input type="hidden" name="action" value="sign-up">
                     <button type="submit" class="btn" id="signupBtn">Sign Up</button>
                 </form>
-                <form id="signinForm" action="" method="POST">
+                <form id="signinForm" action="Sign-in.php" method="POST">
                     <input type="hidden" name="action" value="sign-in">
                     <button type="submit" class="btn" id="signinBtn">Sign In</button>
                 </form>
