@@ -501,7 +501,4 @@ footer .backtop:hover {
         display: flex;
         flex-direction: column;
     }
-    .verti-line {
-        display: none;
-    }
 }

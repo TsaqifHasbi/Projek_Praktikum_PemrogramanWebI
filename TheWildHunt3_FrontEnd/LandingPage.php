@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Witcher Wild Hunt</title>
     <link rel="stylesheet" href="LandingPage.css">
+    <link rel="shotcut icon" href="../assets/Sign Up/Logo.svg">
 </head>
 <body>
     <div class="container">

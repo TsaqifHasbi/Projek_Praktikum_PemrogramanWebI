@@ -30,6 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up - The Witcher</title>
     <link rel="stylesheet" href="Sign-up.css">
+    <link rel="shotcut icon" href="../assets/Sign Up/Logo.svg">
 </head>
 <body>
     <div class="background">

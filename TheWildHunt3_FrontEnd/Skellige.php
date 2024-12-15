@@ -55,7 +55,7 @@ $isAdmin = in_array($username, $adminUsers);
     <header>
         <div class="header-content">
             <a href="Skellige.php">
-                <img src="../assets/Sign In/Logo.svg" alt="The Witcher Logo" class="logo">
+                <img src="../assets/Prologue/Logo.svg" alt="The Witcher Logo" class="logo">
             </a>
             <button class="profile" onclick="window.location.href='<?= $isAdmin ? 'settingAdmin.php' : 'settingUser.php' ?>'">
             <img class="region" src="../assets/Choose Region/<?= htmlspecialchars($region) ?>.svg" alt="">

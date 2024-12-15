@@ -55,7 +55,7 @@ $isAdmin = in_array($username, $adminUsers);
     <header>
         <div class="header-content">
             <a href="Velen.php">
-                <img src="../assets/Sign In/Logo.svg" alt="The Witcher Logo" class="logo">
+                <img src="../assets/Prologue/Logo.svg" alt="The Witcher Logo" class="logo">
             </a>
             <button class="profile" onclick="window.location.href='<?= $isAdmin ? 'settingAdmin.php' : 'settingUser.php' ?>'">
             <img class="region" src="../assets/Choose Region/<?= htmlspecialchars($region) ?>.svg" alt="">
@@ -85,6 +85,7 @@ $isAdmin = in_array($username, $adminUsers);
             </div>
         </div>
     </section>
+    <div class="compass-left"></div>
     <section class="events-section">
         <img class="dots3" src="../assets/Prologue/3 dot.svg">
         <div class="events">
@@ -102,7 +103,7 @@ $isAdmin = in_array($username, $adminUsers);
             </div>
         </div>
     </section>
-    <div class="bg-compas"></div>
+    <div class="compass-right"></div>
     <section class="scene">
         <img class="dots3" src="../assets/Prologue/line.svg">
         <div class="gallery">

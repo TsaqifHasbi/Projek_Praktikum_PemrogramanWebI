@@ -48,6 +48,7 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
+    overflow-x: hidden;
 }
 
 .header-content {
@@ -489,9 +490,6 @@ footer .backtop:hover {
     .card{
         display: flex;
         flex-direction: column;
-    }
-    .verti-line {
-        display: none;
     }
 }
 
